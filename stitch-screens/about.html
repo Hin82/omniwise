@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#54c7ff",
+              "tertiary-container": "#452400",
+              "inverse-primary": "#aac7ff",
+              "on-primary-fixed-variant": "#264779",
+              "primary-fixed": "#d6e3ff",
+              "primary-fixed-dim": "#aac7ff",
+              "on-tertiary-fixed-variant": "#6b3b00",
+              "outline": "#747780",
+              "surface-container-high": "#e6e8eb",
+              "surface": "#f7f9fc",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed": "#2d1600",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#281200",
+              "on-secondary-fixed": "#001e2c",
+              "surface-dim": "#d8dadd",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#2d3133",
+              "outline-variant": "#c4c6d0",
+              "on-tertiary": "#ffffff",
+              "on-background": "#191c1e",
+              "surface-container-low": "#f2f4f7",
+              "surface-container-highest": "#e0e3e6",
+              "on-surface": "#191c1e",
+              "tertiary-fixed-dim": "#ffb875",
+              "inverse-on-surface": "#eff1f4",
+              "primary": "#001736",
+              "surface-tint": "#3f5f92",
+              "on-surface-variant": "#43474f",
+              "background": "#f7f9fc",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#7bd0ff",
+              "surface-bright": "#f7f9fc",
+              "on-secondary-container": "#00516f",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#004c69",
+              "tertiary-fixed": "#ffdcc0",
+              "on-error": "#ffffff",
+              "secondary": "#00668a",
+              "surface-container": "#eceef1",
+              "secondary-fixed": "#c4e7ff",
+              "on-tertiary-container": "#d97d00",
+              "primary-container": "#002b5c",
+              "surface-variant": "#e0e3e6",
+              "on-primary-fixed": "#001b3e",
+              "on-primary-container": "#7594cb"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .bokeh-overlay {
+            background: radial-gradient(circle at 20% 30%, rgba(84, 199, 255, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, rgba(255, 184, 117, 0.05) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+<div class="text-xl font-black text-blue-950 dark:text-white font-headline tracking-tight"><img alt="OmniWise AB Logo" class="w-auto object-contain h-32" src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"/></div>
+<div class="hidden md:flex items-center space-x-8 font-manrope font-bold tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="#">Services</a>
+<a class="text-blue-600 dark:text-cyan-400 border-b-2 border-blue-600 dark:border-cyan-400 pb-1" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="#">Contact</a>
+<button class="bg-primary text-white px-6 py-2 rounded-xl hover:translate-y-[-2px] transition-all duration-300">Get Started</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24 min-h-screen bokeh-overlay">
+<!-- Hero Section: Editorial Layout -->
+<section class="max-w-7xl mx-auto px-8 py-20 md:py-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="text-secondary font-headline font-bold tracking-widest uppercase text-sm mb-4 block">The Expert Behind the Business</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-tight tracking-tighter mb-8">
+                        Conny Mohlin
+                    </h1>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+<p>
+                            At OmniWise AB, IT is more than just infrastructure—it is the digital nervous system of your business. My approach bridges the gap between complex technical solutions and the practical reality of daily business processes.
+                        </p>
+<p class="font-semibold text-primary">
+                            Efficiency isn't found in tools alone, but in how those tools empower people to work smarter.
+                        </p>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img alt="Conny Mohlin Profile" class="w-full h-full object-cover" data-alt="Professional portrait of a middle-aged tech consultant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3fZYUQjebOcnMnSHRSWJ44FlWZwphEePar5O1LqgZ_zvR83wunCtMeUGGMwHjdh4xNxXnN_Z0IXwWU4zCQ9OAXVKCsHSQsOq6eBcTXSUguQ4SyAzhhC-0G_HclKsGnMWCDq_FYuz0OykKIldcYUzozEmADyDX6-zkhEwmo3c8e6erZMr3RXPvv1x0DnaK6pcaVJbx889xRTRHSflUCC3USmfiX6WrBZRfzOiPFAl75fjwlNhAMUp8TTCjKgUmS7A6ytYJ-1z01h4"/>
+</div>
+<!-- Asymmetric Decoration -->
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Experience & Values -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Years of Experience Card -->
+<div class="md:col-span-2 bg-primary p-12 rounded-xl flex flex-col justify-between text-white relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-6xl md:text-8xl font-headline font-black mb-4">20+</h3>
+<p class="text-xl font-headline font-light tracking-wide text-primary-fixed-dim">Years of technical leadership and business transformation.</p>
+</div>
+<div class="absolute right-[-20px] bottom-[-20px] opacity-10 group-hover:scale-110 transition-transform duration-700">
+<span class="material-symbols-outlined text-[15rem]">analytics</span>
+</div>
+</div>
+<!-- Innovation Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col items-start shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<h4 class="text-2xl font-headline font-bold text-primary mb-3">Innovation</h4>
+<p class="text-on-surface-variant">Constantly scouting the digital horizon to bring emerging M365 and Cloud capabilities to your workflow.</p>
+</div>
+<!-- Efficiency Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col items-start shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h4 class="text-2xl font-headline font-bold text-primary mb-3">Efficiency</h4>
+<p class="text-on-surface-variant">Streamlining operations through MDM solutions and automation to reclaim your most valuable resource: time.</p>
+</div>
+<!-- Professionalism Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col items-start shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<h4 class="text-2xl font-headline font-bold text-primary mb-3">Professionalism</h4>
+<p class="text-on-surface-variant">A commitment to integrity, clear communication, and robust IT strategy that scales with your growth.</p>
+</div>
+<!-- Personal Statement Extension -->
+<div class="md:col-span-2 glass-card p-12 rounded-xl border border-white/20">
+<p class="font-headline text-2xl text-primary font-medium italic leading-relaxed">
+                            "My goal is to demystify technology. Whether it's managing complex MDM environments or automating manual tasks, I focus on the human impact of every technical decision."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Section -->
+<section class="max-w-7xl mx-auto px-8 py-32 text-center relative overflow-hidden">
+<div class="max-w-2xl mx-auto relative z-10">
+<h2 class="text-3xl font-headline font-bold text-primary mb-8">Personal Commitment</h2>
+<p class="text-on-surface-variant mb-12 text-lg">
+                    When you partner with OmniWise AB, you are getting more than a consultant. You are getting a partner dedicated to your long-term digital resilience and operational success.
+                </p>
+<div class="relative inline-block mt-4">
+<img alt="Conny Mohlin Signature" class="h-24 mx-auto mix-blend-multiply opacity-80 rotate-[-2deg]" data-alt="Elegant handwritten signature of Conny Mohlin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOChOs_CRxUcdX-4fjUsiiOHs_EiYGoO1yarPc2wc9G3-arSc7VhkmdDWKK0qOXCCU6guhzVrBOYxyrigdg4P5HIpSj2DgOmgf-JeYD4VYTB4nf3pwGYRAiAF078MJe5bOU18Nd5kkIeWXSzO2nYYTPTk6QqvvfJEyt2mECyO9BE2AQojYnX0n157Bzd6uCAtYZ8SMoGGRVfYT0Vb4DCz7RAxKiS8WrJbdZtxX39Zi8FSDEAu5hkNpSCbyJNQnuqi2kix33d8PKIU"/>
+<span class="block mt-4 text-secondary font-headline font-bold tracking-widest text-xs uppercase">Conny Mohlin, Founder</span>
+</div>
+</div>
+<!-- Decorative "Stamp" -->
+<div class="absolute right-10 bottom-10 opacity-5 rotate-12">
+<span class="material-symbols-outlined text-[20rem] text-primary">verified</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-blue-950 dark:bg-slate-950 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 font-inter text-sm leading-relaxed">
+<div class="space-y-4">
+<div class="text-2xl font-manrope font-bold text-white"><img alt="OmniWise AB Logo" class="w-auto object-contain brightness-0 invert h-24" src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"/></div>
+<p class="text-slate-400">Bridging the gap between strategy and execution through intelligent IT solutions.</p>
+</div>
+<div>
+<h5 class="text-cyan-400 dark:text-cyan-300 font-bold mb-4">Expertise</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-400 hover:text-cyan-400 transition-all hover:translate-x-1 inline-block" href="#">IT Strategy</a></li>
+<li><a class="text-slate-400 hover:text-cyan-400 transition-all hover:translate-x-1 inline-block" href="#">M365 &amp; Cloud</a></li>
+<li><a class="text-slate-400 hover:text-cyan-400 transition-all hover:translate-x-1 inline-block" href="#">MDM Solutions</a></li>
+<li><a class="text-slate-400 hover:text-cyan-400 transition-all hover:translate-x-1 inline-block" href="#">Automation</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-cyan-400 dark:text-cyan-300 font-bold mb-4">Legal</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-400 hover:text-cyan-400 transition-all hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-cyan-400 transition-all hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="relative">
+<h5 class="text-cyan-400 dark:text-cyan-300 font-bold mb-4">Contact</h5>
+<p class="text-slate-400">Stockholm, Sweden</p>
+<p class="text-slate-400 mt-2">info@omniwise.se</p>
+<!-- Signature Overlay from JSON instructions -->
+<div class="opacity-10 rotate-3 absolute right-0 bottom-0 pointer-events-none text-white text-4xl font-headline font-black">
+                    Mohlin
+                </div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-white/10 mt-12 pt-8 text-center text-slate-500">
+            © 2024 OmniWise AB. All rights reserved.
+        </div>
+</footer>
+</body></html>

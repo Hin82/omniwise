@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#54c7ff",
+              "inverse-primary": "#aac7ff",
+              "tertiary": "#281200",
+              "on-background": "#191c1e",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-fixed": "#001b3e",
+              "secondary-fixed": "#c4e7ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#d8dadd",
+              "on-tertiary-fixed-variant": "#6b3b00",
+              "on-secondary-fixed": "#001e2c",
+              "on-error": "#ffffff",
+              "primary": "#001736",
+              "on-surface-variant": "#43474f",
+              "surface-container-low": "#f2f4f7",
+              "surface": "#f7f9fc",
+              "background": "#f7f9fc",
+              "outline-variant": "#c4c6d0",
+              "surface-container-highest": "#e0e3e6",
+              "secondary-fixed-dim": "#7bd0ff",
+              "secondary": "#00668a",
+              "on-tertiary": "#ffffff",
+              "surface-tint": "#3f5f92",
+              "inverse-surface": "#2d3133",
+              "on-tertiary-container": "#d97d00",
+              "on-surface": "#191c1e",
+              "on-secondary-container": "#00516f",
+              "on-secondary-fixed-variant": "#004c69",
+              "primary-container": "#002b5c",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#264779",
+              "inverse-on-surface": "#eff1f4",
+              "on-tertiary-fixed": "#2d1600",
+              "outline": "#747780",
+              "surface-bright": "#f7f9fc",
+              "surface-container": "#eceef1",
+              "primary-fixed": "#d6e3ff",
+              "tertiary-fixed": "#ffdcc0",
+              "tertiary-fixed-dim": "#ffb875",
+              "surface-container-high": "#e6e8eb",
+              "tertiary-container": "#452400",
+              "on-secondary": "#ffffff",
+              "surface-variant": "#e0e3e6",
+              "primary-fixed-dim": "#aac7ff",
+              "on-primary-container": "#7594cb"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-bokeh {
+            background: radial-gradient(circle at 20% 30%, rgba(84, 199, 255, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, rgba(255, 184, 117, 0.05) 0%, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-[#001736]/80 backdrop-blur-md shadow-[0_20px_40px_rgba(0,23,54,0.06)]">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+<a class="flex items-center" href="#">
+<img alt="OmniWise AB Logo" class="w-auto object-contain h-32" src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"/>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope font-bold tracking-tight text-[#00668a] dark:text-cyan-300 border-b-2 border-[#00668a] pb-1 transition-opacity duration-300" href="#">Services</a>
+<a class="font-manrope font-bold tracking-tight text-[#001736]/70 dark:text-slate-300 hover:text-[#00668a] hover:opacity-80 transition-opacity duration-300" href="#">M365</a>
+<a class="font-manrope font-bold tracking-tight text-[#001736]/70 dark:text-slate-300 hover:text-[#00668a] hover:opacity-80 transition-opacity duration-300" href="#">Development</a>
+<a class="font-manrope font-bold tracking-tight text-[#001736]/70 dark:text-slate-300 hover:text-[#00668a] hover:opacity-80 transition-opacity duration-300" href="#">Hardware</a>
+<a class="font-manrope font-bold tracking-tight text-[#001736]/70 dark:text-slate-300 hover:text-[#00668a] hover:opacity-80 transition-opacity duration-300" href="#">Interim</a>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2.5 rounded-xl font-bold active:scale-95 transition-transform">Contact Us</button>
+</div>
+</div>
+<div class="bg-slate-200/20 dark:bg-white/5 h-[1px] w-full absolute bottom-0"></div>
+</nav>
+<main class="pt-24 bg-bokeh min-h-screen">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-24 md:py-32">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-3/5">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary font-bold text-sm tracking-widest uppercase mb-6">Expertise Overview</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-tight tracking-tight mb-8">
+                        The Intelligent <br/> <span class="text-secondary">Luminary</span> in IT.
+                    </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-10">
+                        We don't just solve technical problems; we craft the strategic foundations for your digital future. From cloud architecture to custom automation, OmniWise AB bridges the gap between complex technology and human leadership.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-primary/20 transition-all active:scale-95">Explore Services</button>
+<button class="px-8 py-4 rounded-xl font-bold text-primary border border-primary/10 hover:bg-surface-container-low transition-colors">View Projects</button>
+</div>
+</div>
+<div class="w-full md:w-2/5 relative">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<div class="relative glass-card p-2 rounded-3xl shadow-2xl rotate-2">
+<img alt="Conny Mohlin Signature" class="absolute -bottom-10 -left-10 w-48 opacity-90 drop-shadow-md z-10 -rotate-12" data-alt="Handwritten signature of Conny Mohlin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLHiUD0TTa14o54GjE-OTqA3zlszXuZ6894hCCbmmpmAZ5YNAKgUUuTJ0bMFoUrSlGSK-CNpKX_Fspm9NKyz6Qp87tWJ1CQOlNqdB6MSdSUQhUKVtFJ0XFcUoCothlFpO4gOshEyVPEE9yRnJtOIOrWxNcIPMzPsx2VT6Svl2noZ41HOUx687iBEgqX5uSoNSdvFO7D0XGkb2R0_pHJ8qSRAlAuumedDT9Bskyqh_a1FLMOFQmErfgtIwxtEnZtRk4MC2zrJXszfk"/>
+<div class="bg-surface-container-low rounded-2xl overflow-hidden aspect-[4/5] relative">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white z-20">
+<p class="font-headline font-bold text-lg">Conny Mohlin</p>
+<p class="text-sm opacity-80 uppercase tracking-widest">Founder &amp; Lead Consultant</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Services Bento Grid -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="mb-16">
+<h2 class="text-3xl md:text-4xl font-headline font-extrabold text-primary mb-4">Core Ecosystem</h2>
+<div class="w-24 h-1.5 bg-secondary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- M365 & Cloud -->
+<div class="md:col-span-8 bg-surface-container-low p-10 rounded-3xl flex flex-col justify-between group hover:bg-white hover:shadow-xl transition-all duration-500">
+<div class="flex justify-between items-start">
+<div class="bg-white p-4 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-4xl text-secondary">cloud</span>
+</div>
+<span class="text-xs font-bold tracking-widest text-on-surface-variant/40 uppercase">Architecture</span>
+</div>
+<div class="mt-12">
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Microsoft 365 &amp; Cloud Strategy</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-xl mb-6">
+                            Transform your collaborative workspace with expert tenant configuration, security hardening, and strategic migration paths. We specialize in turning complex cloud environments into seamless operational assets.
+                        </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-lg bg-white text-xs font-bold text-primary shadow-sm">Azure AD</span>
+<span class="px-4 py-2 rounded-lg bg-white text-xs font-bold text-primary shadow-sm">Security Audit</span>
+<span class="px-4 py-2 rounded-lg bg-white text-xs font-bold text-primary shadow-sm">Tenant Management</span>
+</div>
+</div>
+</div>
+<!-- MDM & Samsung Knox -->
+<div class="md:col-span-4 bg-primary text-white p-10 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-secondary rounded-full opacity-20 blur-3xl"></div>
+<div>
+<div class="bg-white/10 p-4 rounded-2xl inline-block mb-8 backdrop-blur-md">
+<span class="material-symbols-outlined text-4xl text-secondary-container">smartphone</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">MDM &amp; Samsung Knox Manage</h3>
+</div>
+<p class="text-white/70 leading-relaxed text-sm mb-6">
+                        Enterprise-grade mobile security and device lifecycle management. We are certified partners in Samsung Knox ecosystem, ensuring your fleet is managed, secured, and ready for work.
+                    </p>
+<a class="text-secondary-container font-bold flex items-center gap-2 group" href="#">
+                        Get Certified 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Software Development -->
+<div class="md:col-span-4 glass-card p-10 rounded-3xl border border-primary/5 hover:border-secondary/20 transition-all">
+<div class="bg-secondary/10 p-4 rounded-2xl inline-block mb-8">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">code</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Development &amp; Automation</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        Custom software solutions and workflow automation. From internal tools to complex API integrations, we build the bridges that keep your data moving.
+                    </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+                            Process Automation
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+                            Custom Web Apps
+                        </li>
+</ul>
+</div>
+<!-- Leadership/Management Section Content Integration -->
+<div class="md:col-span-8 bg-surface-container-highest p-10 rounded-3xl relative overflow-hidden group">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Strategic Leadership Services</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                                High-level technical leadership for organizations in transition. We provide the experience needed to steer digital transformation, manage large teams, and define long-term IT roadmaps.
+                            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-secondary mb-3">supervised_user_circle</span>
+<h4 class="font-bold text-primary">Interim IT-Director</h4>
+<p class="text-xs text-on-surface-variant mt-1">Stabilizing organizations during leadership gaps.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-secondary mb-3">terminal</span>
+<h4 class="font-bold text-primary">Development Lead</h4>
+<p class="text-xs text-on-surface-variant mt-1">Guiding technical teams toward peak efficiency.</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/3">
+<div class="bg-primary p-8 rounded-2xl text-white">
+<h4 class="font-headline font-bold mb-4">IT-Chef as a Service</h4>
+<p class="text-sm opacity-70 mb-6">Fractional leadership for growing companies that need senior expertise without the full-time overhead.</p>
+<button class="w-full py-3 bg-secondary text-white font-bold rounded-xl active:scale-95 transition-transform">Inquire Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hardware & Licenses -->
+<section class="max-w-7xl mx-auto px-8 py-24 bg-surface-container-low rounded-[3rem]">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/3">
+<h2 class="text-3xl font-headline font-extrabold text-primary mb-4">Hardware &amp; Licensing</h2>
+<p class="text-on-surface-variant">Procurement shouldn't be a pain. We manage your full lifecycle—from sourcing devices to managing complex M365 and software license renewals.</p>
+</div>
+<div class="md:w-2/3 grid grid-cols-2 sm:grid-cols-4 gap-6">
+<div class="text-center p-6 bg-white rounded-3xl group hover:-translate-y-2 transition-transform">
+<span class="material-symbols-outlined text-4xl text-secondary/30 group-hover:text-secondary mb-3">laptop_mac</span>
+<p class="font-bold text-sm text-primary">Apple Fleet</p>
+</div>
+<div class="text-center p-6 bg-white rounded-3xl group hover:-translate-y-2 transition-transform">
+<span class="material-symbols-outlined text-4xl text-secondary/30 group-hover:text-secondary mb-3">desktop_windows</span>
+<p class="font-bold text-sm text-primary">Workstations</p>
+</div>
+<div class="text-center p-6 bg-white rounded-3xl group hover:-translate-y-2 transition-transform">
+<span class="material-symbols-outlined text-4xl text-secondary/30 group-hover:text-secondary mb-3">key</span>
+<p class="font-bold text-sm text-primary">License Audit</p>
+</div>
+<div class="text-center p-6 bg-white rounded-3xl group hover:-translate-y-2 transition-transform">
+<span class="material-symbols-outlined text-4xl text-secondary/30 group-hover:text-secondary mb-3">inventory_2</span>
+<p class="font-bold text-sm text-primary">Asset Mgmt</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-8 py-32 text-center">
+<div class="bg-gradient-to-br from-primary to-primary-container p-16 md:p-24 rounded-[4rem] relative overflow-hidden">
+<div class="absolute inset-0 bg-bokeh opacity-10"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white mb-8">Ready to illuminate your technical roadmap?</h2>
+<p class="text-lg text-white/70 mb-12">Book a strategic audit or discovery session with our senior consultants today.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-secondary-container text-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-white transition-colors">Book a Consultation</button>
+<button class="border border-white/20 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/5 transition-colors">Direct Contact</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#001736] dark:bg-[#000b1a] w-full py-12 px-8 mt-24">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<img alt="OmniWise AB Logo" class="w-auto object-contain brightness-0 invert mb-2 h-24" src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"/>
+<p class="font-inter text-sm leading-relaxed text-slate-400">© 2024 OmniWise AB. The Intelligent Luminary.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-inter text-sm leading-relaxed text-slate-400 hover:text-white hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="font-inter text-sm leading-relaxed text-slate-400 hover:text-white hover:underline transition-all" href="#">Terms of Service</a>
+<a class="font-inter text-sm leading-relaxed text-slate-400 hover:text-white hover:underline transition-all" href="#">Sustainability</a>
+<a class="font-inter text-sm leading-relaxed text-slate-400 hover:text-white hover:underline transition-all" href="#">Careers</a>
+</div>
+<div class="relative">
+</div>
+</div>
+</footer>
+</body></html>

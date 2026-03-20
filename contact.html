@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="sv" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt | OmniWise AB — Låt oss bygga framtiden tillsammans</title>
+  <meta name="description" content="Kontakta OmniWise AB, er IT-konsultpartner i Stockholm. Hör av er för IT-strategi, moln, MDM och automationslösningar." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#001736",
+            "primary-container": "#002b5c",
+            "secondary": "#00668a",
+            "secondary-container": "#54c7ff",
+            "accent-warm": "#ffb875",
+            "surface": "#f7f9fc",
+            "surface-dim": "#eceef1",
+            "surface-low": "#f2f4f7",
+            "surface-high": "#e6e8eb",
+            "surface-highest": "#e0e3e6",
+            "on-surface": "#191c1e",
+            "on-surface-variant": "#43474f",
+            "outline": "#747780",
+            "outline-variant": "#c4c6d0",
+          },
+          fontFamily: {
+            "headline": ["Manrope", "sans-serif"],
+            "body": ["Outfit", "sans-serif"],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-primary">
+
+  <!-- ======= Navigation ======= -->
+  <nav class="nav-main" role="navigation" aria-label="Huvudnavigering">
+    <div class="nav-inner max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" aria-label="OmniWise AB — Hem">
+        <img
+          src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"
+          alt="OmniWise AB Logo"
+          class="h-10 w-auto object-contain"
+        />
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="nav-links-desktop hidden md:flex items-center gap-8">
+        <a href="services.html" class="nav-link">Tjänster</a>
+        <a href="about.html" class="nav-link">Om oss</a>
+        <a href="contact.html" class="nav-link active">Kontakt</a>
+        <a href="contact.html" class="btn-primary px-6 py-2.5 rounded-xl text-sm">Kom igång</a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="nav-mobile-toggle md:hidden text-primary" aria-label="Öppna meny">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobilnavigering">
+    <button class="close-btn" aria-label="Stäng meny">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="index.html">Hem</a>
+    <a href="services.html">Tjänster</a>
+    <a href="about.html">Om oss</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="contact.html" class="btn-primary px-8 py-3 rounded-xl text-lg mt-4">Kom igång</a>
+  </div>
+
+  <!-- ======= Main Content ======= -->
+  <main class="pt-32 pb-24 relative overflow-hidden">
+
+    <!-- Bokeh Background Blobs -->
+    <div class="absolute top-0 right-0 -z-10 w-[500px] h-[500px] bg-secondary-container/10 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 left-0 -z-10 w-[400px] h-[400px] bg-accent-warm/10 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2"></div>
+
+    <div class="max-w-7xl mx-auto px-8">
+
+      <!-- Heading Area -->
+      <div class="mb-20 reveal">
+        <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tight mb-6 leading-none">
+          Låt oss bygga<br /><span class="text-secondary">framtiden</span> tillsammans.
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed font-body">
+          Redo att optimera era IT-verksamhet? Hör av er idag och upptäck hur vår expertkonsultering kan lyfta er tekniska infrastruktur.
+        </p>
+      </div>
+
+      <!-- Two-Column Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+        <!-- Left Column — Contact Details + Map -->
+        <div class="lg:col-span-5 space-y-12">
+
+          <!-- Contact Items -->
+          <section class="space-y-8">
+            <!-- Email -->
+            <div class="flex items-start gap-6 group reveal delay-1">
+              <div class="w-14 h-14 rounded-full bg-surface-high flex items-center justify-center text-secondary shrink-0 transition-colors group-hover:bg-secondary group-hover:text-white">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div>
+                <h3 class="font-headline font-bold text-lg text-primary">Maila oss</h3>
+                <p class="text-on-surface-variant text-lg font-body">hello@omniwise.se</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-start gap-6 group reveal delay-2">
+              <div class="w-14 h-14 rounded-full bg-surface-high flex items-center justify-center text-secondary shrink-0 transition-colors group-hover:bg-secondary group-hover:text-white">
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <div>
+                <h3 class="font-headline font-bold text-lg text-primary">Ring oss</h3>
+                <p class="text-on-surface-variant text-lg font-body">+46 (0) 8 123 45 67</p>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="flex items-start gap-6 group reveal delay-3">
+              <div class="w-14 h-14 rounded-full bg-surface-high flex items-center justify-center text-secondary shrink-0 transition-colors group-hover:bg-secondary group-hover:text-white">
+                <span class="material-symbols-outlined">share</span>
+              </div>
+              <div>
+                <h3 class="font-headline font-bold text-lg text-primary">Följ oss</h3>
+                <p class="text-on-surface-variant text-lg font-body">linkedin.com/company/omniwise-ab</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Map Section -->
+          <div class="rounded-[2rem] overflow-hidden h-80 shadow-xl relative reveal delay-4">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDT9kZqoSe0-BT2mfRB2BvlRYsp1wGd2W0HCAiIc_qQo7PqzK47PLMXYJ-CT5lTha_GfbRiY4eAQMKMeFQTeI8Fr-gEwAtMxcmwDtrl-Gxz3dMgb6SBd9JSPXMjHoL7ndMSsuu0ln4Jr4C93OYVKQfOBtylbPzF4AHLZ0_70JtbwV89addi9k83RYkpSY55U0wekjUYVF59FrukXTwTi4drX1Jy7TzpAU6Xyl7NLKu3PJyjkgQvzlzlfnei04KlcKY8bhJ_gOnLjk"
+              alt="Karta som visar OmniWise AB:s kontorsplats i centrala Stockholm"
+              class="w-full h-full object-cover grayscale opacity-80"
+            />
+            <!-- Color Overlay -->
+            <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+            <!-- Bouncing Location Pin -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <div class="relative">
+                <span class="material-symbols-outlined text-secondary text-5xl animate-bounce" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-8 h-2 bg-black/20 rounded-full blur-sm"></div>
+              </div>
+            </div>
+            <!-- Glass Info Card -->
+            <div class="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl border border-white/20">
+              <p class="font-headline font-bold text-primary">OmniWise HQ</p>
+              <p class="text-sm text-on-surface-variant">Sveavägen 12, 111 57 Stockholm</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column — Contact Form -->
+        <div class="lg:col-span-7 reveal delay-2">
+          <div class="glass-card rounded-[2rem] shadow-2xl border border-white/30 p-8 md:p-12">
+            <form class="space-y-6" onsubmit="return false;">
+              <!-- Name + Company Row -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="contact-name" class="block text-sm font-semibold text-primary/70 ml-1">Namn</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Anna Svensson"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label for="contact-company" class="block text-sm font-semibold text-primary/70 ml-1">Företag</label>
+                  <input
+                    type="text"
+                    id="contact-company"
+                    name="company"
+                    class="form-input"
+                    placeholder="Ditt Företag AB"
+                    autocomplete="organization"
+                  />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="space-y-2">
+                <label for="contact-email" class="block text-sm font-semibold text-primary/70 ml-1">E-post</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="anna@foretag.se"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="space-y-2">
+                <label for="contact-message" class="block text-sm font-semibold text-primary/70 ml-1">Meddelande</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="6"
+                  class="form-input resize-none"
+                  placeholder="Hur kan vi hjälpa er?"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="w-full btn-primary py-5 rounded-xl text-lg flex items-center justify-center gap-3 group"
+              >
+                Skicka meddelande
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </button>
+            </form>
+
+            <!-- Trust Badge -->
+            <div class="mt-8 flex items-start gap-4 p-4 bg-surface-low rounded-xl">
+              <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+              <p class="text-xs text-on-surface-variant leading-relaxed">
+                Er information är krypterad och hanteras i strikt enlighet med vår integritetspolicy. Vi svarar vanligtvis inom 24 arbetstimmar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer-main bg-primary py-20 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+      <!-- Col 1: Logo + Tagline -->
+      <div class="space-y-6">
+        <a href="index.html" aria-label="OmniWise AB — Hem">
+          <img
+            src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"
+            alt="OmniWise AB Logo"
+            class="h-16 w-auto object-contain brightness-0 invert"
+          />
+        </a>
+        <p class="text-white/45 text-sm leading-relaxed font-body">
+          Överbryggar klyftan mellan teknisk komplexitet och mänsklig uppfinningsrikedom genom expert IT-strategi och automation.
+        </p>
+      </div>
+
+      <!-- Col 2: Solutions -->
+      <div>
+        <h4 class="footer-heading">Lösningar</h4>
+        <nav class="flex flex-col gap-3" aria-label="Lösningar">
+          <a href="services.html">IT-strategi</a>
+          <a href="services.html">M365 &amp; moln</a>
+          <a href="services.html">MDM-lösningar</a>
+          <a href="services.html">Automation</a>
+        </nav>
+      </div>
+
+      <!-- Col 3: Company -->
+      <div>
+        <h4 class="footer-heading">Företag</h4>
+        <nav class="flex flex-col gap-3" aria-label="Företag">
+          <a href="about.html">Om oss</a>
+          <a href="contact.html" class="!text-white !font-semibold">Kontakt</a>
+          <a href="#">Integritetspolicy</a>
+          <a href="#">Användarvillkor</a>
+        </nav>
+      </div>
+
+      <!-- Col 4: Office -->
+      <div>
+        <h4 class="footer-heading">Kontor</h4>
+        <p class="text-white/45 text-sm leading-relaxed font-body">
+          Sveavägen 12<br />
+          111 57 Stockholm<br />
+          Sverige
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-white/40 text-sm font-body">&copy; 2026 OmniWise AB. Alla rättigheter förbehållna.</p>
+      <div class="flex gap-6">
+        <a href="#" aria-label="Webbplats">
+          <span class="material-symbols-outlined text-white/40 hover:text-white transition-colors cursor-pointer">language</span>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <span class="material-symbols-outlined text-white/40 hover:text-white transition-colors cursor-pointer">person</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Decorative Signature -->
+    <div class="absolute right-10 bottom-10 rotate-3 select-none pointer-events-none opacity-[0.03]">
+      <img
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3SV2xQPEuxQH687hf8G2mUnPyX5QmKHQ74cNf85gWCrY1bGniDTZi--me2RggeQiX-tYc-iH7Miy2uaV0UvSZqMFJOdRQ9_gz7kHzmYhD_YfcsN08mVD2c8XpAFyAJmd6nvHZ-GV8-zbvuPvfSymUbPhOVhqEwrHPKOhqW0bib0GBUFyaVV5Ds-EwF9awVhY6ucl8CFq5a1TFWNmxvFb_caNwYUkCsrbESsS7doJ6s_2h5P0-pv6BfCKYfg5ZMMSAGY_gPyz-oDU"
+        alt=""
+        class="h-24 filter brightness-0 invert"
+        aria-hidden="true"
+      />
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

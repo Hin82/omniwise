@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om OmniWise &amp; Conny Mohlin | OmniWise AB</title>
+  <meta name="description" content="Möt Conny Mohlin — 20+ års IT-ledarskap, Microsoft 365-expertis och affärstransformation. OmniWise AB, Stockholm." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Outfit:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#001736",
+            "primary-container": "#002b5c",
+            "secondary": "#00668a",
+            "secondary-container": "#54c7ff",
+            "accent-warm": "#ffb875",
+            "surface": "#f7f9fc",
+            "surface-dim": "#eceef1",
+            "surface-low": "#f2f4f7",
+            "surface-high": "#e6e8eb",
+            "surface-highest": "#e0e3e6",
+            "on-surface": "#191c1e",
+            "on-surface-variant": "#43474f",
+            "outline": "#747780",
+            "outline-variant": "#c4c6d0",
+          },
+          fontFamily: {
+            "headline": ["Manrope", "sans-serif"],
+            "body": ["Outfit", "sans-serif"],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-surface text-on-surface font-body overflow-x-hidden">
+
+  <!-- ================================================================
+       Navigation
+       ================================================================ -->
+  <nav class="nav-main" role="navigation" aria-label="Huvudnavigering">
+    <div class="nav-inner max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+      <!-- Logo -->
+      <a href="index.html" aria-label="OmniWise AB — Hem">
+        <img
+          src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"
+          alt="OmniWise AB Logotyp"
+          class="h-10 w-auto object-contain"
+        />
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="nav-links-desktop hidden md:flex items-center gap-8">
+        <a href="services.html" class="nav-link">Tjänster</a>
+        <a href="about.html" class="nav-link">Om oss</a>
+        <a href="contact.html" class="nav-link">Kontakt</a>
+        <a href="contact.html" class="btn-primary px-6 py-2.5 rounded-xl text-sm">Kom igång</a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="nav-mobile-toggle md:hidden text-primary" aria-label="Öppna meny">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobilnavigering">
+    <button class="close-btn" aria-label="Stäng meny">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="index.html">Hem</a>
+    <a href="services.html">Tjänster</a>
+    <a href="about.html">Om oss</a>
+    <a href="contact.html">Kontakt</a>
+  </div>
+
+  <!-- ================================================================
+       Main Content
+       ================================================================ -->
+  <main class="pt-24">
+
+    <!-- ============================================================
+         1. Hero — Editorial Layout
+         ============================================================ -->
+    <section class="bokeh-subtle py-20 md:py-32 px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+        <!-- Left Column -->
+        <div class="lg:col-span-7 space-y-8 reveal">
+          <span class="inline-block text-secondary text-xs font-bold uppercase tracking-widest">
+            Experten bakom verksamheten
+          </span>
+
+          <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tighter leading-[1.05]">
+            Conny Mohlin
+          </h1>
+
+          <p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-2xl">
+            På OmniWise AB är IT mer än bara infrastruktur &mdash; det är ditt företags digitala nervsystem.
+            Mitt arbetssätt överbryggar klyftan mellan komplexa tekniska lösningar och den praktiska verkligheten i dagliga affärsprocesser.
+          </p>
+
+          <p class="font-semibold text-primary text-lg md:text-xl leading-relaxed max-w-2xl">
+            Effektivitet finns inte bara i verktygen, utan i hur verktygen ger människor möjlighet att arbeta smartare.
+          </p>
+        </div>
+
+        <!-- Right Column — Portrait -->
+        <div class="lg:col-span-5 relative reveal delay-2">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3fZYUQjebOcnMnSHRSWJ44FlWZwphEePar5O1LqgZ_zvR83wunCtMeUGGMwHjdh4xNxXnN_Z0IXwWU4zCQ9OAXVKCsHSQsOq6eBcTXSUguQ4SyAzhhC-0G_HclKsGnMWCDq_FYuz0OykKIldcYUzozEmADyDX6-zkhEwmo3c8e6erZMr3RXPvv1x0DnaK6pcaVJbx889xRTRHSflUCC3USmfiX6WrBZRfzOiPFAl75fjwlNhAMUp8TTCjKgUmS7A6ytYJ-1z01h4"
+              alt="Conny Mohlin — Grundare av OmniWise AB"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <!-- Decorative blur orb -->
+          <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -z-10" aria-hidden="true"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. Bento Grid — Experience & Values
+         ============================================================ -->
+    <section class="bg-surface-low py-24 px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- 20+ Years (col-span-2) -->
+        <div class="md:col-span-2 bg-primary text-white p-12 rounded-xl relative overflow-hidden reveal">
+          <span class="material-symbols-outlined absolute top-8 right-8 text-[120px] text-white/5" aria-hidden="true">analytics</span>
+          <p class="font-headline font-black text-6xl md:text-8xl tracking-tighter leading-none mb-4">20+</p>
+          <p class="text-lg md:text-xl text-white/80 max-w-md leading-relaxed">
+            Års tekniskt ledarskap och affärstransformation.
+          </p>
+        </div>
+
+        <!-- Innovation -->
+        <div class="bg-white p-8 rounded-xl shadow-sm reveal delay-1">
+          <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-secondary text-2xl">lightbulb</span>
+          </div>
+          <h3 class="font-headline font-bold text-primary text-lg mb-3">Innovation</h3>
+          <p class="text-on-surface-variant leading-relaxed text-sm">
+            Utforskar ständigt den digitala horisonten för att tillföra nya M365- och molnkapabiliteter till ert arbetsflöde.
+          </p>
+        </div>
+
+        <!-- Efficiency -->
+        <div class="bg-white p-8 rounded-xl shadow-sm reveal delay-2">
+          <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-secondary text-2xl">bolt</span>
+          </div>
+          <h3 class="font-headline font-bold text-primary text-lg mb-3">Effektivitet</h3>
+          <p class="text-on-surface-variant leading-relaxed text-sm">
+            Effektiviserar verksamheten genom MDM-lösningar och automation för att frigöra er mest värdefulla resurs: tid.
+          </p>
+        </div>
+
+        <!-- Professionalism -->
+        <div class="bg-white p-8 rounded-xl shadow-sm reveal delay-3">
+          <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-secondary text-2xl">verified_user</span>
+          </div>
+          <h3 class="font-headline font-bold text-primary text-lg mb-3">Professionalism</h3>
+          <p class="text-on-surface-variant leading-relaxed text-sm">
+            Ett engagemang för integritet, tydlig kommunikation och robust IT-strategi som skalas med er tillväxt.
+          </p>
+        </div>
+
+        <!-- Personal Quote (col-span-2) -->
+        <div class="md:col-span-2 glass-card p-12 rounded-xl reveal delay-4">
+          <span class="material-symbols-outlined text-secondary text-4xl mb-4 block" aria-hidden="true" style="font-variation-settings:'FILL' 1;">format_quote</span>
+          <p class="text-primary text-lg md:text-xl leading-relaxed italic max-w-xl">
+            &ldquo;Mitt mål är att avmystifiera teknologi. Oavsett om det handlar om att hantera komplexa MDM-miljöer eller automatisera manuella uppgifter, fokuserar jag på den mänskliga effekten av varje tekniskt beslut.&rdquo;
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. Personal Commitment
+         ============================================================ -->
+    <section class="py-32 px-8 relative">
+      <div class="max-w-2xl mx-auto text-center reveal">
+        <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-primary mb-8 tracking-tight">
+          Personligt engagemang
+        </h2>
+        <p class="text-on-surface-variant text-lg md:text-xl leading-relaxed mb-12">
+          När du samarbetar med OmniWise AB får du mer än en konsult.
+          Du får en partner som är dedikerad till din långsiktiga digitala motståndskraft och operativa framgång.
+        </p>
+
+        <!-- Signature -->
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOChOs_CRxUcdX-4fjUsiiOHs_EiYGoO1yarPc2wc9G3-arSc7VhkmdDWKK0qOXCCU6guhzVrBOYxyrigdg4P5HIpSj2DgOmgf-JeYD4VYTB4nf3pwGYRAiAF078MJe5bOU18Nd5kkIeWXSzO2nYYTPTk6QqvvfJEyt2mECyO9BE2AQojYnX0n157Bzd6uCAtYZ8SMoGGRVfYT0Vb4DCz7RAxKiS8WrJbdZtxX39Zi8FSDEAu5hkNpSCbyJNQnuqi2kix33d8PKIU"
+          alt="Conny Mohlins signatur"
+          class="h-24 mx-auto mix-blend-multiply opacity-80 -rotate-2 mb-4"
+        />
+        <p class="font-headline font-bold text-primary text-lg">Conny Mohlin, grundare</p>
+      </div>
+
+      <!-- Faded verified stamp -->
+      <span class="material-symbols-outlined absolute bottom-12 right-12 text-[160px] text-primary opacity-5 select-none pointer-events-none" aria-hidden="true" style="font-variation-settings:'FILL' 1;">verified</span>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+       Footer
+       ================================================================ -->
+  <footer class="footer-main bg-primary py-20 px-8 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+
+      <!-- Brand -->
+      <div class="md:col-span-1 reveal">
+        <a href="index.html" aria-label="OmniWise AB — Hem">
+          <img
+            src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"
+            alt="OmniWise AB Logotyp"
+            class="h-16 w-auto object-contain brightness-0 invert mb-4"
+          />
+        </a>
+        <p class="text-white/45 text-sm leading-relaxed max-w-xs">
+          Skapar intelligenta miljöer där högteknologi möter personlig service. Vi leder ditt företag in i nästa digitala era.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div class="reveal delay-1">
+        <h4 class="footer-heading">Tjänster</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a href="services.html">IT-strategi</a></li>
+          <li><a href="services.html">M365 &amp; Moln</a></li>
+          <li><a href="services.html">MDM-lösningar</a></li>
+          <li><a href="services.html">Automation</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="reveal delay-2">
+        <h4 class="footer-heading">Företag</h4>
+        <ul class="space-y-4 text-sm">
+          <li><a href="about.html">Om oss</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="#">Integritetspolicy</a></li>
+          <li><a href="#">Användarvillkor</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="reveal delay-3">
+        <h4 class="footer-heading">Nyhetsbrev</h4>
+        <p class="text-white/45 text-sm mb-4">Få de senaste insikterna om automation och molnstrategi.</p>
+        <form class="flex gap-2" onsubmit="return false;">
+          <label for="footer-email" class="sr-only">E-postadress</label>
+          <input
+            id="footer-email"
+            type="email"
+            placeholder="E-postadress"
+            class="bg-white/10 border-none rounded-lg text-sm px-4 py-2 w-full text-white placeholder-white/40 focus:ring-2 focus:ring-secondary-container outline-none"
+          />
+          <button type="submit" class="bg-secondary-container text-primary p-2 rounded-lg hover:scale-110 active:scale-90 transition-transform shadow-lg shadow-secondary-container/20" aria-label="Prenumerera">
+            <span class="material-symbols-outlined">send</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 reveal">
+      <p class="text-white/35 text-sm">&copy; 2024 OmniWise AB. Alla rättigheter förbehållna.</p>
+      <div class="flex gap-6">
+        <a href="#" class="text-white/35 hover:text-white transition-all hover:scale-125" aria-label="Webbplats"><span class="material-symbols-outlined">public</span></a>
+        <a href="#" class="text-white/35 hover:text-white transition-all hover:scale-125" aria-label="Nätverk"><span class="material-symbols-outlined">hub</span></a>
+      </div>
+    </div>
+
+    <!-- Decorative Signature -->
+    <div class="absolute right-10 bottom-10 opacity-[0.03] rotate-3 select-none pointer-events-none" aria-hidden="true">
+      <img
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZT1IFaNWkvjWcitTmVm4vY_7nJPbUg1im-Ceu3P2DV_Up-OJowF0bw44rqXyqUHQScioVknWuOaRqm-AFqxrrAY0NPzNVDQWesYj8HpfPE3iCphyCje2qmtDL3nnn7JTm0fy05_9sbo8MsxyaEuvulqTqD01MSbz16ircnlrBBLtiZCVFH4tZ7ka3L3CUzGr261sk5eshe7zS0DQSlr3GofA5UwTqQ3ByP1lGITtZdFyFaPTy7JOMOug66Fl7lXfqYf8JdeG2aMc"
+        alt=""
+        class="w-64 invert brightness-200"
+      />
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
