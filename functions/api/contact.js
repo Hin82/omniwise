@@ -50,9 +50,9 @@ export async function onRequestPost(context) {
 
     if (!brevoResponse.ok) {
       const err = await brevoResponse.text();
-      console.error('Brevo error:', err);
+      console.error('Brevo error:', brevoResponse.status, err);
       return new Response(
-        JSON.stringify({ error: 'Kunde inte skicka meddelandet. Försök igen senare.' }),
+        JSON.stringify({ error: 'Kunde inte skicka meddelandet. Försök igen senare.', detail: err }),
         { status: 502, headers: { 'Content-Type': 'application/json', ...corsHeaders } }
       );
     }
