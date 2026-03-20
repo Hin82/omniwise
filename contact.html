@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt | OmniWise AB — Låt oss bygga framtiden tillsammans</title>
-  <meta name="description" content="Kontakta OmniWise AB, er IT-konsultpartner i Stockholm. Hör av er för IT-strategi, moln, MDM och automationslösningar." />
+  <meta name="description" content="Kontakta OmniWise AB, er IT-konsultpartner i Habo. Hör av er för IT-strategi, moln, MDM och automationslösningar." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,7 +57,7 @@
         <img
           src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"
           alt="OmniWise AB Logo"
-          class="h-10 w-auto object-contain"
+          class="h-16 md:h-20 w-auto object-contain"
         />
       </a>
 
@@ -133,7 +133,7 @@
               </div>
               <div>
                 <h3 class="font-headline font-bold text-lg text-primary">Ring oss</h3>
-                <p class="text-on-surface-variant text-lg font-body">+46 (0) 8 123 45 67</p>
+                <p class="text-on-surface-variant text-lg font-body">+46 768 50 17 94</p>
               </div>
             </div>
 
@@ -153,7 +153,7 @@
           <div class="rounded-[2rem] overflow-hidden h-80 shadow-xl relative reveal delay-4">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDT9kZqoSe0-BT2mfRB2BvlRYsp1wGd2W0HCAiIc_qQo7PqzK47PLMXYJ-CT5lTha_GfbRiY4eAQMKMeFQTeI8Fr-gEwAtMxcmwDtrl-Gxz3dMgb6SBd9JSPXMjHoL7ndMSsuu0ln4Jr4C93OYVKQfOBtylbPzF4AHLZ0_70JtbwV89addi9k83RYkpSY55U0wekjUYVF59FrukXTwTi4drX1Jy7TzpAU6Xyl7NLKu3PJyjkgQvzlzlfnei04KlcKY8bhJ_gOnLjk"
-              alt="Karta som visar OmniWise AB:s kontorsplats i centrala Stockholm"
+              alt="Karta som visar OmniWise AB:s kontorsplats i Habo"
               class="w-full h-full object-cover grayscale opacity-80"
             />
             <!-- Color Overlay -->
@@ -168,7 +168,7 @@
             <!-- Glass Info Card -->
             <div class="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl border border-white/20">
               <p class="font-headline font-bold text-primary">OmniWise HQ</p>
-              <p class="text-sm text-on-surface-variant">Sveavägen 12, 111 57 Stockholm</p>
+              <p class="text-sm text-on-surface-variant">Hagagatan 16, 566 32 Habo</p>
             </div>
           </div>
 
@@ -177,7 +177,7 @@
         <!-- Right Column — Contact Form -->
         <div class="lg:col-span-7 reveal delay-2">
           <div class="glass-card rounded-[2rem] shadow-2xl border border-white/30 p-8 md:p-12">
-            <form class="space-y-6" onsubmit="return false;">
+            <form id="contact-form" class="space-y-6">
               <!-- Name + Company Row -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="space-y-2">
@@ -237,9 +237,20 @@
                 type="submit"
                 class="w-full btn-primary py-5 rounded-xl text-lg flex items-center justify-center gap-3 group"
               >
-                Skicka meddelande
-                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                <span id="btn-text">Skicka meddelande</span>
+                <span id="btn-spinner" class="hidden material-symbols-outlined animate-spin">progress_activity</span>
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" id="btn-arrow">arrow_forward</span>
               </button>
+
+              <!-- Status Messages -->
+              <div id="form-success" class="hidden p-4 rounded-xl bg-green-50 border border-green-200 text-green-800 text-sm font-medium">
+                <span class="material-symbols-outlined align-middle mr-1 text-green-600" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Tack för ditt meddelande! Vi återkommer inom 24 arbetstimmar.
+              </div>
+              <div id="form-error" class="hidden p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-sm font-medium">
+                <span class="material-symbols-outlined align-middle mr-1 text-red-600" style="font-variation-settings: 'FILL' 1;">error</span>
+                <span id="error-text">Något gick fel. Försök igen senare.</span>
+              </div>
             </form>
 
             <!-- Trust Badge -->
@@ -266,7 +277,7 @@
           <img
             src="https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA"
             alt="OmniWise AB Logo"
-            class="h-16 w-auto object-contain brightness-0 invert"
+            class="h-24 w-auto object-contain brightness-0 invert"
           />
         </a>
         <p class="text-white/45 text-sm leading-relaxed font-body">
@@ -300,8 +311,8 @@
       <div>
         <h4 class="footer-heading">Kontor</h4>
         <p class="text-white/45 text-sm leading-relaxed font-body">
-          Sveavägen 12<br />
-          111 57 Stockholm<br />
+          Hagagatan 16<br />
+          566 32 Habo<br />
           Sverige
         </p>
       </div>
@@ -324,7 +335,7 @@
     <!-- Decorative Signature -->
     <div class="absolute right-10 bottom-10 rotate-3 select-none pointer-events-none opacity-[0.03]">
       <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3SV2xQPEuxQH687hf8G2mUnPyX5QmKHQ74cNf85gWCrY1bGniDTZi--me2RggeQiX-tYc-iH7Miy2uaV0UvSZqMFJOdRQ9_gz7kHzmYhD_YfcsN08mVD2c8XpAFyAJmd6nvHZ-GV8-zbvuPvfSymUbPhOVhqEwrHPKOhqW0bib0GBUFyaVV5Ds-EwF9awVhY6ucl8CFq5a1TFWNmxvFb_caNwYUkCsrbESsS7doJ6s_2h5P0-pv6BfCKYfg5ZMMSAGY_gPyz-oDU"
+        src="images/signatur.png"
         alt=""
         class="h-24 filter brightness-0 invert"
         aria-hidden="true"
@@ -334,5 +345,57 @@
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      const btnText = document.getElementById('btn-text');
+      const btnSpinner = document.getElementById('btn-spinner');
+      const btnArrow = document.getElementById('btn-arrow');
+      const successEl = document.getElementById('form-success');
+      const errorEl = document.getElementById('form-error');
+      const errorText = document.getElementById('error-text');
+
+      // Reset
+      successEl.classList.add('hidden');
+      errorEl.classList.add('hidden');
+
+      // Loading state
+      btn.disabled = true;
+      btnText.textContent = 'Skickar...';
+      btnSpinner.classList.remove('hidden');
+      btnArrow.classList.add('hidden');
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: form.querySelector('#contact-name').value,
+            company: form.querySelector('#contact-company').value,
+            email: form.querySelector('#contact-email').value,
+            message: form.querySelector('#contact-message').value,
+          }),
+        });
+        const data = await res.json();
+        if (res.ok) {
+          successEl.classList.remove('hidden');
+          form.reset();
+        } else {
+          errorText.textContent = data.error || 'Något gick fel. Försök igen senare.';
+          errorEl.classList.remove('hidden');
+        }
+      } catch (err) {
+        errorText.textContent = 'Kunde inte ansluta till servern. Kontrollera din internetanslutning.';
+        errorEl.classList.remove('hidden');
+      } finally {
+        btn.disabled = false;
+        btnText.textContent = 'Skicka meddelande';
+        btnSpinner.classList.add('hidden');
+        btnArrow.classList.remove('hidden');
+      }
+    });
+  </script>
 </body>
 </html>
