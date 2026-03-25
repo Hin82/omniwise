@@ -1,0 +1,12 @@
+# OmniWise AB — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://omniwise.se/sitemap.xml
+
+# Disallow non-content paths
+Disallow: /functions/
+Disallow: /stitch-screens/
+Disallow: /js/
+Disallow: /css/
