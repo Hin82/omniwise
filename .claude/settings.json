@@ -8,7 +8,16 @@
       "Bash(dig omniwise.se A @kyree.ns.cloudflare.com +short)",
       "Bash(curl -I https://omniwise.se)",
       "Bash(dig omniwise.se A +short)",
-      "Bash(dig omniwise.se A @1.1.1.1 +short)"
+      "Bash(dig omniwise.se A @1.1.1.1 +short)",
+      "Bash(do sed:*)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/conny/Repos/OmniWise/omniwise/images/6.png\")",
+      "Bash(sips -c 625 625 --cropOffset 0 0 images/6.png --out images/favicon-src.png)",
+      "Bash(sips -z 180 180 images/favicon-src.png --out images/apple-touch-icon.png)",
+      "Bash(sips -z 32 32 images/favicon-src.png --out images/favicon-32x32.png)",
+      "Bash(sips -z 16 16 images/favicon-src.png --out images/favicon-16x16.png)",
+      "Bash(sips -c 625 625 images/6.png --out images/favicon-src.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight images/favicon-src.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight images/7.png)"
     ]
   }
 }
