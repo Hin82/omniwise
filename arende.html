@@ -268,11 +268,11 @@
             </button>
 
             <!-- Status Messages -->
-            <div id="arende-success" class="hidden p-4 rounded-xl bg-green-50 border border-green-200 text-green-800 text-sm font-medium">
+            <div id="arende-success" class="hidden p-4 rounded-xl bg-green-50 border border-green-200 text-green-800 text-sm font-medium" role="status" aria-live="polite" aria-atomic="true" aria-hidden="true">
               <span class="material-symbols-outlined align-middle mr-1 text-green-600" style="font-variation-settings: 'FILL' 1;">check_circle</span>
               Tack! Ditt ärende har registrerats. Vi återkommer inom kort.
             </div>
-            <div id="arende-error" class="hidden p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-sm font-medium">
+            <div id="arende-error" class="hidden p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-sm font-medium" role="alert" aria-live="assertive" aria-atomic="true" aria-hidden="true">
               <span class="material-symbols-outlined align-middle mr-1 text-red-600" style="font-variation-settings: 'FILL' 1;">error</span>
               <span id="arende-error-text">Något gick fel. Försök igen senare.</span>
             </div>
@@ -327,8 +327,8 @@
           <a href="about.html">Om oss</a>
           <a href="contact.html">Kontakt</a>
           <a href="arende.html" class="!text-white !font-semibold">Ärenden</a>
-          <a href="#">Integritetspolicy</a>
-          <a href="#">Användarvillkor</a>
+          <a href="integritetspolicy.html">Integritetspolicy</a>
+          <a href="anvandarvillkor.html">Användarvillkor</a>
         </nav>
       </div>
 
@@ -384,7 +384,25 @@
 
       // Reset
       successEl.classList.add('hidden');
+      successEl.setAttribute('aria-hidden', 'true');
       errorEl.classList.add('hidden');
+      errorEl.setAttribute('aria-hidden', 'true');
+
+      // Trim inputs
+      const name = form.querySelector('#arende-name').value.trim();
+      const company = form.querySelector('#arende-company').value.trim();
+      const email = form.querySelector('#arende-email').value.trim();
+      const category = form.querySelector('#arende-category').value;
+      const priority = form.querySelector('#arende-priority').value;
+      const subject = form.querySelector('#arende-subject').value.trim();
+      const description = form.querySelector('#arende-description').value.trim();
+
+      if (!name || !email || !category || !priority || !subject || !description) {
+        errorText.textContent = 'Vänligen fyll i alla obligatoriska fält.';
+        errorEl.classList.remove('hidden');
+        errorEl.setAttribute('aria-hidden', 'false');
+        return;
+      }
 
       // Loading state
       btn.disabled = true;
@@ -396,27 +414,22 @@
         const res = await fetch('/api/arende', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name: form.querySelector('#arende-name').value,
-            company: form.querySelector('#arende-company').value,
-            email: form.querySelector('#arende-email').value,
-            category: form.querySelector('#arende-category').value,
-            priority: form.querySelector('#arende-priority').value,
-            subject: form.querySelector('#arende-subject').value,
-            description: form.querySelector('#arende-description').value,
-          }),
+          body: JSON.stringify({ name, company, email, category, priority, subject, description }),
         });
         const data = await res.json();
         if (res.ok) {
           successEl.classList.remove('hidden');
+          successEl.setAttribute('aria-hidden', 'false');
           form.reset();
         } else {
           errorText.textContent = data.error || 'Något gick fel. Försök igen senare.';
           errorEl.classList.remove('hidden');
+          errorEl.setAttribute('aria-hidden', 'false');
         }
       } catch (err) {
         errorText.textContent = 'Kunde inte ansluta till servern. Kontrollera din internetanslutning.';
         errorEl.classList.remove('hidden');
+        errorEl.setAttribute('aria-hidden', 'false');
       } finally {
         btn.disabled = false;
         btnText.textContent = 'Skicka ärende';
