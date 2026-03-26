@@ -1,3 +1,5 @@
+import { escapeHtml, sanitizeEmailHeader } from '../lib/utils.js';
+
 export async function onRequestPost(context) {
   const corsHeaders = {
     'Access-Control-Allow-Origin': '*',
@@ -35,7 +37,7 @@ export async function onRequestPost(context) {
         sender: { name: 'OmniWise Kontaktformulär', email: 'hello@omniwise.se' },
         to: [{ email: 'hello@omniwise.se', name: 'OmniWise AB' }],
         replyTo: { email, name },
-        subject: `Kontaktförfrågan från ${name}${company ? ` (${company})` : ''}`,
+        subject: `Kontaktförfrågan från ${sanitizeEmailHeader(name)}${company ? ` (${sanitizeEmailHeader(company)})` : ''}`,
         htmlContent: `
           <h2>Nytt meddelande från kontaktformuläret</h2>
           <table style="border-collapse:collapse;width:100%;max-width:600px;">
@@ -52,7 +54,7 @@ export async function onRequestPost(context) {
       const err = await brevoResponse.text();
       console.error('Brevo error:', brevoResponse.status, err);
       return new Response(
-        JSON.stringify({ error: 'Kunde inte skicka meddelandet. Försök igen senare.', detail: err }),
+        JSON.stringify({ error: 'Kunde inte skicka meddelandet. Försök igen senare.' }),
         { status: 502, headers: { 'Content-Type': 'application/json', ...corsHeaders } }
       );
     }
@@ -80,10 +82,3 @@ export async function onRequestOptions() {
   });
 }
 
-function escapeHtml(str) {
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}

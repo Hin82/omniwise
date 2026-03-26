@@ -36,14 +36,53 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileClose = document.querySelector('.mobile-menu .close-btn');
 
   if (mobileToggle && mobileMenu) {
-    mobileToggle.addEventListener('click', () => {
+    mobileMenu.setAttribute('aria-modal', 'true');
+    let previouslyFocused = null;
+
+    const getFocusableElements = () =>
+      mobileMenu.querySelectorAll('a[href], button, [tabindex]:not([tabindex="-1"])');
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        closeMenu();
+        return;
+      }
+      if (e.key === 'Tab') {
+        const focusable = getFocusableElements();
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey) {
+          if (document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else {
+          if (document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
+    };
+
+    const openMenu = () => {
+      previouslyFocused = document.activeElement;
       mobileMenu.classList.add('open');
       document.body.style.overflow = 'hidden';
-    });
+      document.addEventListener('keydown', handleKeyDown);
+      const focusable = getFocusableElements();
+      if (focusable.length > 0) focusable[0].focus();
+    };
+
     const closeMenu = () => {
       mobileMenu.classList.remove('open');
       document.body.style.overflow = '';
+      document.removeEventListener('keydown', handleKeyDown);
+      if (previouslyFocused) previouslyFocused.focus();
     };
+
+    mobileToggle.addEventListener('click', openMenu);
     if (mobileClose) mobileClose.addEventListener('click', closeMenu);
     mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
   }
