@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL -o /tmp/omniwise-logo-test.png \"https://lh3.googleusercontent.com/aida/ADBb0ugcGqfRbUYgvmsBuUJjnAfyNs5rwSuwzjjcYkgoxuX0TZpLzBW9N711p4gV4VbSYRZXQ7rxEKJYZFjRAwVnGR0m1NBN_Jvl09IodMW3lQfkHK9A6fVHB6Md77QYAGw5lNgYjJfNVUJ9JwEAmLGeUJEfTL-_pcTcpu5nl2fYAV2dzDhoy1uLMDHWp9hkPEEY856T9IHcC71840gl_fv4sqXTWJ3ZC_wvBeH1Pa-iFSbAGOXgw7CqJCBBRVbZKNf_pVuqm3bDaVuWvA\")"
+    ]
+  }
+}
