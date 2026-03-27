@@ -1,45 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://omniwise.se/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/" />
+    <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://omniwise.se/services.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/services.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/services.html" />
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://omniwise.se/about.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/about.html" />
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://omniwise.se/contact.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/contact.html" />
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://omniwise.se/arende.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/arende.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/arende.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/arende.html" />
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://omniwise.se/integritetspolicy.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://omniwise.se/anvandarvillkor.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://omniwise.se/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/" />
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://omniwise.se/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/services.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/services.html" />
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://omniwise.se/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/about.html" />
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://omniwise.se/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/contact.html" />
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://omniwise.se/en/arende.html</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://omniwise.se/arende.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://omniwise.se/en/arende.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omniwise.se/arende.html" />
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
