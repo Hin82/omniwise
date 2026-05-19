@@ -389,6 +389,14 @@ main {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
+/* --- FAQ Accordion (details/summary) --- */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .nav-links-desktop { display: none !important; }
