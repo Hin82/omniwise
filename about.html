@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Om OmniWise AB | IT-konsult Jönköping & Habo — 20+ Års erfarenhet</title>
+  <title>Om Conny Mohlin | AI-utvecklare i Jönköping — OmniWise AB</title>
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
-  <meta name="description" content="Möt Conny Mohlin — grundare av OmniWise AB i Habo med 20+ års erfarenhet av IT-ledarskap. Lokal IT-konsult i Jönköpingsregionen med fokus på kundnära relationer." />
-  <meta name="keywords" content="Conny Mohlin, AI-utvecklare Jönköping, AI developer, hemsideutveckling, webbutvecklare Habo, OmniWise AB, IT-konsult Jönköping, IT-konsult Habo, IT Jönköpings län, IT-ledarskap, Microsoft 365 Jönköping, digital transformation" />
+  <meta name="description" content="Möt Conny Mohlin — AI-utvecklare och grundare av OmniWise AB i Habo med 20+ års erfarenhet av IT-ledarskap. AI-automatisering och IT-konsult i Jönköpingsregionen." />
+  <meta name="keywords" content="Conny Mohlin, AI-utvecklare Jönköping, AI-byrå Jönköping, AI-automatisering, OmniWise AB, IT-konsult Jönköping, IT-ledarskap, webbutveckling Habo, digital transformation" />
   <meta name="author" content="OmniWise AB" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://omniwise.se/about.html" />
@@ -19,16 +19,16 @@
   <!-- Open Graph -->
   <meta property="og:type" content="profile" />
   <meta property="og:site_name" content="OmniWise AB" />
-  <meta property="og:title" content="Om OmniWise AB | IT-konsult Jönköping & Habo — 20+ Års erfarenhet" />
-  <meta property="og:description" content="Möt Conny Mohlin — grundare av OmniWise AB. Lokal IT-konsult i Jönköpingsregionen med 20+ års erfarenhet och fokus på kundnära relationer." />
+  <meta property="og:title" content="Om Conny Mohlin | AI-utvecklare i Jönköping — OmniWise AB" />
+  <meta property="og:description" content="Möt Conny Mohlin — AI-utvecklare och grundare av OmniWise AB. 20+ års erfarenhet av IT-ledarskap, AI-automatisering och digital transformation." />
   <meta property="og:url" content="https://omniwise.se/about.html" />
   <meta property="og:image" content="https://omniwise.se/images/conny-portrait.jpg" />
   <meta property="og:locale" content="sv_SE" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Om OmniWise AB | IT-konsult Jönköping & Habo — 20+ Års erfarenhet" />
-  <meta name="twitter:description" content="Möt Conny Mohlin — grundare av OmniWise AB. Lokal IT-konsult i Jönköpingsregionen med kundnära relationer." />
+  <meta name="twitter:title" content="Om Conny Mohlin | AI-utvecklare i Jönköping — OmniWise AB" />
+  <meta name="twitter:description" content="Möt Conny Mohlin — AI-utvecklare och grundare av OmniWise AB med 20+ års erfarenhet av IT-ledarskap." />
   <meta name="twitter:image" content="https://omniwise.se/images/conny-portrait.jpg" />
 
   <!-- Structured Data: Person -->
@@ -36,16 +36,25 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://omniwise.se/#conny-mohlin",
     "name": "Conny Mohlin",
     "jobTitle": "Grundare, AI-utvecklare & Chefsstrateg",
     "worksFor": {
       "@type": "Organization",
       "name": "OmniWise AB",
-      "url": "https://omniwise.se"
+      "url": "https://omniwise.se",
+      "@id": "https://omniwise.se/#organization"
     },
     "url": "https://omniwise.se/about.html",
     "image": "https://omniwise.se/images/conny-portrait.jpg",
-    "description": "IT-ledare i Jönköpingsregionen med 20+ års erfarenhet av Microsoft 365, molnstrategi, MDM och digital transformation. Baserad i Habo, Jönköpings län."
+    "description": "AI-utvecklare och IT-ledare i Jönköpingsregionen med över 20 års erfarenhet av AI-automatisering, Microsoft 365, molnstrategi, MDM och digital transformation. Baserad i Habo, Jönköpings län.",
+    "knowsAbout": ["AI-utveckling", "AI-agenter", "AI-automatisering", "Microsoft 365", "Molnstrategi", "Mobile Device Management", "Samsung Knox", "IT-strategi", "Webbutveckling", "Digital transformation"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Habo",
+      "addressRegion": "Jönköpings län",
+      "addressCountry": "SE"
+    }
   }
   </script>
 
@@ -71,8 +80,8 @@
   }
   </script>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" href="css/tailwind.css" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -81,36 +90,6 @@
 
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Tailwind Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#001736",
-            "primary-container": "#002b5c",
-            "secondary": "#00668a",
-            "secondary-container": "#54c7ff",
-            "accent-warm": "#ffb875",
-            "surface": "#f7f9fc",
-            "surface-dim": "#eceef1",
-            "surface-low": "#f2f4f7",
-            "surface-high": "#e6e8eb",
-            "surface-highest": "#e0e3e6",
-            "on-surface": "#191c1e",
-            "on-surface-variant": "#43474f",
-            "outline": "#747780",
-            "outline-variant": "#c4c6d0",
-          },
-          fontFamily: {
-            "headline": ["Manrope", "sans-serif"],
-            "body": ["Outfit", "sans-serif"],
-          },
-        },
-      },
-    }
-  </script>
 </head>
 
 <body class="bg-surface text-on-surface font-body overflow-x-hidden">
@@ -266,6 +245,82 @@
     </section>
 
     <!-- ============================================================
+         2b. Expertise & Background
+         ============================================================ -->
+    <section class="py-24 px-4 md:px-8" aria-labelledby="expertise-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 reveal max-w-3xl">
+          <div class="section-bar mb-4"></div>
+          <h2 id="expertise-heading" class="font-headline text-3xl md:text-5xl font-extrabold text-primary mb-6">Expertis &amp; bakgrund</h2>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            Conny Mohlin har över 20 års erfarenhet av IT — från drift och infrastruktur till IT-ledarskap och digital transformation. Idag ligger fokus på AI-utveckling: att bygga intelligenta agenter och automationer som ger små och medelstora företag samma effektivitet som stora organisationer. OmniWise AB grundades 2024 med bas i Habo.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="reveal delay-1 glass-card rounded-2xl p-6">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3" style="font-variation-settings:'FILL' 1;">smart_toy</span>
+            <h3 class="font-headline font-bold text-primary mb-2">AI-utveckling &amp; AI-agenter</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Skräddarsydda AI-agenter, chatbots och integrationer med ChatGPT och Claude.</p>
+          </div>
+          <div class="reveal delay-2 glass-card rounded-2xl p-6">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3">bolt</span>
+            <h3 class="font-headline font-bold text-primary mb-2">AI-automatisering</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Processautomation som eliminerar manuellt arbete med Power Automate och egna API:er.</p>
+          </div>
+          <div class="reveal delay-3 glass-card rounded-2xl p-6">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3">cloud</span>
+            <h3 class="font-headline font-bold text-primary mb-2">Microsoft 365 &amp; moln</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Tenant-konfiguration, säkerhetshärdning och strategisk migrering till molnet.</p>
+          </div>
+          <div class="reveal delay-1 glass-card rounded-2xl p-6">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3">phone_iphone</span>
+            <h3 class="font-headline font-bold text-primary mb-2">MDM &amp; Samsung Knox</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Enhetshantering och mobilsäkerhet i företagsklass över alla plattformar.</p>
+          </div>
+          <div class="reveal delay-2 glass-card rounded-2xl p-6">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3">language</span>
+            <h3 class="font-headline font-bold text-primary mb-2">Webbutveckling</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Snabba, flerspråkiga och sökmotoroptimerade webbplatser och webbappar.</p>
+          </div>
+          <div class="reveal delay-3 glass-card rounded-2xl p-6">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3">psychology</span>
+            <h3 class="font-headline font-bold text-primary mb-2">IT-strategi &amp; ledarskap</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Interim IT-chef, CIO som tjänst och ledning av digital transformation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2c. Kundomdömen — PLATSHÅLLARE
+         ------------------------------------------------------------
+         TODO: Fyll i riktiga kundomdömen nedan och ta sedan bort
+         kommentarstaggarna (<!-- och -->) så att sektionen visas.
+         Lägg även till matchande Review-schema i <head> vid behov.
+         ============================================================ -->
+    <!--
+    <section class="py-24 px-4 md:px-8 bg-surface-low" aria-labelledby="testimonials-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 reveal max-w-3xl">
+          <div class="section-bar mb-4"></div>
+          <h2 id="testimonials-heading" class="font-headline text-3xl md:text-5xl font-extrabold text-primary">Vad kunder säger</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <figure class="glass-card rounded-2xl p-8">
+            <blockquote class="text-on-surface-variant leading-relaxed italic">"[Kundcitat — beskriv resultatet OmniWise levererade.]"</blockquote>
+            <figcaption class="mt-4 font-headline font-bold text-primary">[Namn], [Roll] — [Företag]</figcaption>
+          </figure>
+          <figure class="glass-card rounded-2xl p-8">
+            <blockquote class="text-on-surface-variant leading-relaxed italic">"[Kundcitat — beskriv resultatet OmniWise levererade.]"</blockquote>
+            <figcaption class="mt-4 font-headline font-bold text-primary">[Namn], [Roll] — [Företag]</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- ============================================================
          3. Personal Commitment
          ============================================================ -->
     <section class="py-32 px-4 md:px-8 relative">
@@ -368,10 +423,10 @@
 
     <!-- Copyright Bar -->
     <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 reveal">
-      <p class="text-white/35 text-sm">&copy; 2024 OmniWise AB. Alla rättigheter förbehållna.</p>
+      <p class="text-white/35 text-sm">&copy; 2026 OmniWise AB. Alla rättigheter förbehållna.</p>
       <div class="flex gap-6">
-        <a href="#" class="text-white/35 hover:text-white transition-all hover:scale-125" aria-label="Webbplats"><span class="material-symbols-outlined">public</span></a>
-        <a href="#" class="text-white/35 hover:text-white transition-all hover:scale-125" aria-label="Nätverk"><span class="material-symbols-outlined">hub</span></a>
+        <a href="https://www.linkedin.com/company/omniwise-ab" target="_blank" rel="noopener" class="text-white/35 hover:text-white transition-all hover:scale-125" aria-label="OmniWise AB på LinkedIn"><span class="material-symbols-outlined">share</span></a>
+        <a href="mailto:hello@omniwise.se" class="text-white/35 hover:text-white transition-all hover:scale-125" aria-label="Maila OmniWise AB"><span class="material-symbols-outlined">mail</span></a>
       </div>
     </div>
 

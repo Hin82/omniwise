@@ -68,6 +68,14 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
+            "name": "Web Development",
+            "description": "Fast, secure, SEO-optimized websites and web apps in Swedish and English."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
             "name": "Samsung Knox Manage & MDM",
             "description": "Enterprise device management, mobile fleet security, and lifecycle management with Samsung Knox."
           }
@@ -116,8 +124,66 @@
   }
   </script>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between an AI agent and a chatbot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A chatbot answers questions in a conversation. An AI agent can also carry out tasks on its own — retrieve information, fill in systems, and complete workflows. OmniWise AB builds both, depending on what your business needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you integrate ChatGPT or Claude into our systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. OmniWise AB develops integrations with leading AI models such as ChatGPT (OpenAI) and Claude (Anthropic), securely connecting them to your business systems, documents, and APIs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does an AI automation project take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A simple automation is often delivered within one to two weeks. More advanced AI agents with integrations typically take four to eight weeks. You receive a timeline with the quote."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you build websites too?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build fast, secure, SEO-optimized websites and web apps in Swedish and English, hosted on Cloudflare Pages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a fractional CIO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A fractional CIO is an experienced IT leader who steps in part-time — during a vacancy, a growth phase, or a transformation. OmniWise AB offers this as a service, without the cost of a full-time hire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you only work with businesses in the Jönköping region?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our base is Habo and we are happy to meet clients on site in the Jönköping region. AI development, automation, and web projects are also delivered remotely to businesses throughout Sweden."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" href="/css/tailwind.css" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -127,35 +193,6 @@
 
   <!-- Design System -->
   <link rel="stylesheet" href="/css/style.css" />
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#001736",
-            "primary-container": "#002b5c",
-            "secondary": "#00668a",
-            "secondary-container": "#54c7ff",
-            "accent-warm": "#ffb875",
-            "surface": "#f7f9fc",
-            "surface-dim": "#eceef1",
-            "surface-low": "#f2f4f7",
-            "surface-high": "#e6e8eb",
-            "surface-highest": "#e0e3e6",
-            "on-surface": "#191c1e",
-            "on-surface-variant": "#43474f",
-            "outline": "#747780",
-            "outline-variant": "#c4c6d0",
-          },
-          fontFamily: {
-            "headline": ["Manrope", "sans-serif"],
-            "body": ["Outfit", "sans-serif"],
-          },
-        },
-      },
-    }
-  </script>
 </head>
 
 <body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-primary">
@@ -577,6 +614,81 @@
               <p class="font-bold text-sm text-primary">Asset Management</p>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Frequently Asked Questions
+         ============================================================ -->
+    <section class="py-24 px-4 md:px-8" aria-labelledby="faq-heading">
+      <div class="max-w-3xl mx-auto">
+        <div class="mb-12 reveal">
+          <h2 id="faq-heading" class="text-3xl md:text-4xl font-headline font-extrabold text-primary mb-4">FAQ — AI &amp; our services</h2>
+          <div class="section-bar"></div>
+        </div>
+        <div class="flex flex-col gap-4">
+
+          <details class="reveal glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              What is the difference between an AI agent and a chatbot?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              A chatbot answers questions in a conversation. An AI agent can also carry out tasks on its own — retrieve information, fill in systems, and complete workflows. OmniWise AB builds both, depending on what your business needs.
+            </p>
+          </details>
+
+          <details class="reveal delay-1 glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              Can you integrate ChatGPT or Claude into our systems?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              Yes. OmniWise AB develops integrations with leading AI models such as ChatGPT (OpenAI) and Claude (Anthropic), securely connecting them to your business systems, documents, and APIs.
+            </p>
+          </details>
+
+          <details class="reveal delay-2 glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              How long does an AI automation project take?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              A simple automation is often delivered within one to two weeks. More advanced AI agents with integrations typically take four to eight weeks. You receive a timeline with the quote.
+            </p>
+          </details>
+
+          <details class="reveal delay-3 glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              Do you build websites too?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              Yes. We build fast, secure, SEO-optimized websites and web apps in Swedish and English, hosted on Cloudflare Pages.
+            </p>
+          </details>
+
+          <details class="reveal delay-3 glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              What is a fractional CIO?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              A fractional CIO is an experienced IT leader who steps in part-time — during a vacancy, a growth phase, or a transformation. OmniWise AB offers this as a service, without the cost of a full-time hire.
+            </p>
+          </details>
+
+          <details class="reveal delay-4 glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              Do you only work with businesses in the Jönköping region?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              Our base is Habo and we are happy to meet clients on site in the Jönköping region. AI development, automation, and web projects are also delivered remotely to businesses throughout Sweden.
+            </p>
+          </details>
 
         </div>
       </div>
