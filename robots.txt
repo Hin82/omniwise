@@ -1,9 +1,5 @@
 # OmniWise AB — robots.txt
-#
-# OBS: AI-crawlers (GPTBot, ClaudeBot, Google-Extended m.fl.) blockeras för
-# närvarande av en hanterad Cloudflare-regel som läggs till ovanför denna fil.
-# Avaktivera "Block AI bots" i Cloudflare-panelen (AI Audit / Bots) för att
-# låta AI-sökmotorer läsa och citera sajten.
+# AI-sökmotorer är välkomna att läsa och citera sajten.
 
 User-agent: *
 Allow: /
