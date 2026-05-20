@@ -1,0 +1,30 @@
+# OmniWise AB
+
+> OmniWise AB är en AI-utvecklare och IT-konsult i Habo och Jönköpingsregionen. Vi bygger AI-agenter, automatiserar affärsprocesser och levererar Microsoft 365, molnstrategi, MDM och webbutveckling för företag i Jönköpings län.
+
+OmniWise AB grundades 2024 av Conny Mohlin — AI-utvecklare och IT-strateg med över 20 års erfarenhet av tekniskt ledarskap. Företaget har kontor på Hagagatan 16, 566 32 Habo, Sverige, och betjänar företag i Jönköping, Habo, Mullsjö, Bankeryd och Tidaholm.
+
+## Tjänster
+- [AI-utveckling & AI-agenter](https://omniwise.se/services.html): Intelligenta agenter, chatbots, ChatGPT- och Claude-integrationer samt skräddarsydda AI-arbetsflöden.
+- [AI-automatisering](https://omniwise.se/services.html): Processautomation som eliminerar manuellt arbete med Power Automate och egna API:er.
+- [Webbutveckling](https://omniwise.se/services.html): Snabba, säkra och sökmotoroptimerade hemsidor på svenska och engelska.
+- [Microsoft 365 & molnstrategi](https://omniwise.se/services.html): Tenant-konfiguration, säkerhetshärdning och migrering till molnet.
+- [MDM & Samsung Knox](https://omniwise.se/services.html): Enhetshantering och mobilsäkerhet i företagsklass.
+- [Interim IT-chef](https://omniwise.se/services.html): Fraktionellt IT-ledarskap (CIO som tjänst) för växande företag.
+- [Utbildningar](https://omniwise.se/services.html): Workshops i Microsoft 365 och Teams.
+
+## Sidor
+- [Hem](https://omniwise.se/): Översikt över OmniWise AB och tjänsterna.
+- [Tjänster](https://omniwise.se/services.html): Alla tjänster i detalj, med vanliga frågor och svar.
+- [Om oss](https://omniwise.se/about.html): Conny Mohlin, grundare och AI-utvecklare.
+- [Kontakt](https://omniwise.se/contact.html): Kontaktuppgifter och formulär.
+
+## Kontakt
+- E-post: hello@omniwise.se
+- Plats: Hagagatan 16, 566 32 Habo, Jönköpings län, Sverige
+- Verksamhetsområde: Jönköping, Habo, Mullsjö, Bankeryd, Tidaholm
+- LinkedIn: https://www.linkedin.com/company/omniwise-ab
+
+## Övrigt
+- Engelsk version: https://omniwise.se/en/llms.txt
+- Webbplatskarta: https://omniwise.se/sitemap.xml

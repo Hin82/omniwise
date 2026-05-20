@@ -1,12 +1,39 @@
 # OmniWise AB — robots.txt
+#
+# OBS: AI-crawlers (GPTBot, ClaudeBot, Google-Extended m.fl.) blockeras för
+# närvarande av en hanterad Cloudflare-regel som läggs till ovanför denna fil.
+# Avaktivera "Block AI bots" i Cloudflare-panelen (AI Audit / Bots) för att
+# låta AI-sökmotorer läsa och citera sajten.
+
 User-agent: *
+Allow: /
+Disallow: /functions/
+Disallow: /stitch-screens/
+
+# AI-sökmotorer — uttryckligen välkomna
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 # Sitemap
 Sitemap: https://omniwise.se/sitemap.xml
-
-# Disallow non-content paths
-Disallow: /functions/
-Disallow: /stitch-screens/
-Disallow: /js/
-Disallow: /css/

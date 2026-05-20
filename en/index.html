@@ -45,6 +45,8 @@
     "logo": "https://omniwise.se/images/8.png",
     "image": "https://omniwise.se/images/conny-portrait.jpg",
     "description": "OmniWise AB builds intelligent AI automation, AI agents, custom software, and Samsung Knox Manage solutions. Swedish engineering precision for global businesses.",
+    "slogan": "Intelligent, automated, and human.",
+    "knowsAbout": ["AI Development", "AI Agents", "AI Automation", "Microsoft 365", "Cloud Strategy", "Mobile Device Management", "Samsung Knox", "Web Development", "IT Strategy", "Power Automate"],
     "email": "hello@omniwise.se",
     "address": {
       "@type": "PostalAddress",
@@ -61,7 +63,8 @@
     },
     "foundingDate": "2024",
     "sameAs": [
-      "https://www.linkedin.com/company/omniwise-ab"
+      "https://www.linkedin.com/company/omniwise-ab",
+      "https://www.google.com/search?kgmid=/g/11z2wtmvz0"
     ],
     "priceRange": "$$",
     "openingHoursSpecification": {
@@ -101,42 +104,56 @@
   }
   </script>
 
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does an AI developer do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An AI developer builds intelligent tools that automate work — such as AI agents, chatbots, and integrations with ChatGPT or Claude. OmniWise AB develops AI solutions that connect to a company's own systems and processes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to hire an AI developer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost depends on the scope of the project. A small automation can be delivered in a few days, while a custom AI agent takes longer. OmniWise AB always provides a fixed quote after a free initial consultation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of businesses benefit from AI automation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI automation suits businesses of all sizes that have repetitive manual tasks — such as handling email, quotes, invoices, or customer data. Even small companies can save several hours every week."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is OmniWise AB based?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OmniWise AB is based at Hagagatan 16 in Habo, Sweden, and serves businesses across the Jönköping region and remotely throughout Sweden."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#001736",
-            "primary-container": "#002b5c",
-            "secondary": "#00668a",
-            "secondary-container": "#54c7ff",
-            "accent-warm": "#ffb875",
-            "surface": "#f7f9fc",
-            "surface-dim": "#eceef1",
-            "surface-low": "#f2f4f7",
-            "surface-high": "#e6e8eb",
-            "surface-highest": "#e0e3e6",
-            "on-surface": "#191c1e",
-            "on-surface-variant": "#43474f",
-            "outline": "#747780",
-            "outline-variant": "#c4c6d0",
-          },
-          fontFamily: {
-            "headline": ["Manrope", "sans-serif"],
-            "body": ["Outfit", "sans-serif"],
-          },
-        },
-      },
-    }
-  </script>
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" href="/css/tailwind.css">
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="/css/style.css">
@@ -399,6 +416,61 @@
         </div>
       </div>
     </section>
+
+    <!-- ============================================================
+         Frequently Asked Questions
+         ============================================================ -->
+    <section class="py-24 px-4 md:px-8 bg-surface-low" aria-labelledby="faq-heading">
+      <div class="max-w-3xl mx-auto">
+        <div class="reveal mb-12">
+          <div class="section-bar mb-4"></div>
+          <h2 id="faq-heading" class="font-headline text-4xl md:text-5xl font-extrabold text-primary">Frequently asked questions</h2>
+        </div>
+        <div class="flex flex-col gap-4">
+
+          <details class="reveal glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              What does an AI developer do?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              An AI developer builds intelligent tools that automate work — such as AI agents, chatbots, and integrations with ChatGPT or Claude. OmniWise AB develops AI solutions that connect to a company's own systems and processes.
+            </p>
+          </details>
+
+          <details class="reveal delay-1 glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              How much does it cost to hire an AI developer?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              The cost depends on the scope of the project. A small automation can be delivered in a few days, while a custom AI agent takes longer. OmniWise AB always provides a fixed quote after a free initial consultation.
+            </p>
+          </details>
+
+          <details class="reveal delay-2 glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              What kind of businesses benefit from AI automation?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              AI automation suits businesses of all sizes that have repetitive manual tasks — such as handling email, quotes, invoices, or customer data. Even small companies can save several hours every week.
+            </p>
+          </details>
+
+          <details class="reveal delay-3 glass-card rounded-2xl p-6 group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary text-lg">
+              Where is OmniWise AB based?
+              <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+            </summary>
+            <p class="text-on-surface-variant leading-relaxed mt-4">
+              OmniWise AB is based at Hagagatan 16 in Habo, Sweden, and serves businesses across the Jönköping region and remotely throughout Sweden.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ============================================================
@@ -481,11 +553,11 @@
       <div class="border-t border-white/10 mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-white/30 text-sm">&copy; 2026 OmniWise AB. All rights reserved.</p>
         <div class="flex items-center gap-4">
-          <a href="#" aria-label="LinkedIn" class="text-white/30 hover:text-secondary-container transition-colors">
+          <a href="https://www.linkedin.com/company/omniwise-ab" target="_blank" rel="noopener" aria-label="OmniWise AB on LinkedIn" class="text-white/30 hover:text-secondary-container transition-colors">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
-          <a href="#" aria-label="GitHub" class="text-white/30 hover:text-secondary-container transition-colors">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <a href="mailto:hello@omniwise.se" aria-label="Email OmniWise AB" class="text-white/30 hover:text-secondary-container transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 4.5h21A1.5 1.5 0 0124 6v12a1.5 1.5 0 01-1.5 1.5h-21A1.5 1.5 0 010 18V6a1.5 1.5 0 011.5-1.5zm10.5 8.69L2.4 6.6 1.5 7.8 12 15.6l10.5-7.8-.9-1.2L12 13.19z"/></svg>
           </a>
         </div>
       </div>

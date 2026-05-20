@@ -1,0 +1,29 @@
+# OmniWise AB
+
+> OmniWise AB is an AI developer and IT consultancy based in Habo, Sweden. We build AI agents, automate business processes, and deliver Microsoft 365, cloud strategy, MDM, and web development for businesses in the Jönköping region and beyond.
+
+OmniWise AB was founded in 2024 by Conny Mohlin — an AI developer and IT strategist with 20+ years of technical leadership experience. The company is based at Hagagatan 16, 566 32 Habo, Sweden.
+
+## Services
+- [AI Development & AI Agents](https://omniwise.se/en/services.html): Intelligent agents, chatbots, ChatGPT and Claude integrations, and custom AI workflows.
+- [AI Automation](https://omniwise.se/en/services.html): Process automation that eliminates manual work using Power Automate and custom APIs.
+- [Web Development](https://omniwise.se/en/services.html): Fast, secure, SEO-optimized websites in Swedish and English.
+- [Microsoft 365 & Cloud Strategy](https://omniwise.se/en/services.html): Tenant configuration, security hardening, and cloud migration.
+- [Samsung Knox Manage & MDM](https://omniwise.se/en/services.html): Enterprise device management and mobile fleet security.
+- [Fractional CIO](https://omniwise.se/en/services.html): IT leadership as a service for growing businesses.
+- [Training](https://omniwise.se/en/services.html): Microsoft 365 and Teams workshops.
+
+## Pages
+- [Home](https://omniwise.se/en/): Overview of OmniWise AB and its services.
+- [Services](https://omniwise.se/en/services.html): All services in detail, with frequently asked questions.
+- [About](https://omniwise.se/en/about.html): Conny Mohlin, founder and AI developer.
+- [Contact](https://omniwise.se/en/contact.html): Contact details and form.
+
+## Contact
+- Email: hello@omniwise.se
+- Location: Hagagatan 16, 566 32 Habo, Sweden
+- LinkedIn: https://www.linkedin.com/company/omniwise-ab
+
+## Other
+- Swedish version: https://omniwise.se/llms.txt
+- Sitemap: https://omniwise.se/sitemap.xml
