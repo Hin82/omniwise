@@ -205,6 +205,7 @@
       <!-- Desktop Nav Links -->
       <div class="nav-links-desktop hidden md:flex items-center gap-8">
         <a href="services.html" class="nav-link text-sm">Tjänster</a>
+        <a href="/blogg/" class="nav-link text-sm">Blogg</a>
         <a href="about.html" class="nav-link text-sm">Om oss</a>
         <a href="contact.html" class="nav-link text-sm">Kontakt</a>
         <a href="arende.html" class="nav-link text-sm">Ärenden</a>
@@ -226,6 +227,7 @@
     </button>
     <a href="/">Hem</a>
     <a href="services.html">Tjänster</a>
+    <a href="/blogg/">Blogg</a>
     <a href="about.html">Om oss</a>
     <a href="contact.html">Kontakt</a>
     <a href="arende.html">Ärenden</a>
@@ -619,11 +621,13 @@
         <div>
           <p class="footer-heading">Nyhetsbrev</p>
           <p class="text-white/45 text-sm mb-4">Få de senaste insikterna om automation och molnstrategi.</p>
-          <form class="flex gap-2" onsubmit="event.preventDefault();">
+          <form data-newsletter class="flex gap-2">
             <label for="footer-email" class="sr-only">E-postadress</label>
             <input
               id="footer-email"
               type="email"
+              name="email"
+              autocomplete="email"
               placeholder="din@epost.se"
               class="flex-1 px-4 py-3 rounded-xl bg-white/10 text-white text-sm border border-white/10 placeholder-white/30 focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container"
               required
@@ -632,6 +636,7 @@
               <span class="material-symbols-outlined text-xl">send</span>
             </button>
           </form>
+          <p data-newsletter-status role="status" aria-live="polite" class="text-xs text-white/60 mt-2 min-h-[1rem]"></p>
         </div>
 
       </div>
@@ -661,5 +666,6 @@
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
+  <script src="js/newsletter.js"></script>
 </body>
 </html>

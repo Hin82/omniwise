@@ -187,6 +187,56 @@
   }
   </script>
 
+  <!-- Structured Data: Courses (utbildningar) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "OmniWise utbildningar",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Course",
+          "name": "Microsoft Teams-utbildning",
+          "description": "Workshop som lär ert team att strukturera kanaler, möten och samarbete i Microsoft Teams effektivt.",
+          "provider": { "@type": "ProfessionalService", "@id": "https://omniwise.se/#organization", "name": "OmniWise AB", "url": "https://omniwise.se" },
+          "inLanguage": "sv",
+          "url": "https://omniwise.se/services.html",
+          "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "onsite" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Course",
+          "name": "Office 365-paketet — workshop",
+          "description": "Hands-on workshop för Word, Excel, PowerPoint, Outlook och OneDrive — lär er funktioner som sparar timmar varje vecka.",
+          "provider": { "@type": "ProfessionalService", "@id": "https://omniwise.se/#organization", "name": "OmniWise AB", "url": "https://omniwise.se" },
+          "inLanguage": "sv",
+          "url": "https://omniwise.se/services.html",
+          "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "onsite" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Course",
+          "name": "Jobba rätt från dag ett",
+          "description": "Skräddarsydda workshops för ert team. Vi analyserar era arbetsflöden och visar hur ni kan jobba smartare — inte hårdare.",
+          "provider": { "@type": "ProfessionalService", "@id": "https://omniwise.se/#organization", "name": "OmniWise AB", "url": "https://omniwise.se" },
+          "inLanguage": "sv",
+          "url": "https://omniwise.se/services.html",
+          "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "onsite" }
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Compiled Tailwind CSS -->
   <link rel="stylesheet" href="css/tailwind.css" />
 
@@ -219,6 +269,7 @@
       <!-- Desktop Links -->
       <div class="hidden md:flex items-center gap-8 nav-links-desktop">
         <a href="services.html" class="nav-link">Tjänster</a>
+        <a href="/blogg/" class="nav-link">Blogg</a>
         <a href="about.html" class="nav-link">Om oss</a>
         <a href="contact.html" class="nav-link">Kontakt</a>
         <a href="arende.html" class="nav-link">Ärenden</a>
@@ -240,6 +291,7 @@
     </button>
     <a href="/">Hem</a>
     <a href="services.html">Tjänster</a>
+    <a href="/blogg/">Blogg</a>
     <a href="about.html">Om oss</a>
     <a href="contact.html">Kontakt</a>
     <a href="arende.html">Ärenden</a>
