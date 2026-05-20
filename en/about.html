@@ -407,11 +407,14 @@
       <div class="reveal delay-4">
         <h4 class="footer-heading">Newsletter</h4>
         <p class="text-white/45 text-sm mb-4">Get the latest insights on automation and cloud strategy.</p>
-        <form class="flex gap-2" onsubmit="return false;">
+        <form data-newsletter class="flex gap-2">
           <label for="footer-email" class="sr-only">Email address</label>
           <input
             id="footer-email"
             type="email"
+            name="email"
+            autocomplete="email"
+            required
             placeholder="Email address"
             class="bg-white/10 border-none rounded-lg text-sm px-4 py-2 w-full text-white placeholder-white/40 focus:ring-2 focus:ring-secondary-container outline-none"
           />
@@ -419,6 +422,7 @@
             <span class="material-symbols-outlined">send</span>
           </button>
         </form>
+        <p data-newsletter-status role="status" aria-live="polite" class="text-xs text-white/60 mt-2 min-h-[1rem]"></p>
       </div>
 
     </div>
@@ -444,5 +448,6 @@
 
   <!-- Scripts -->
   <script src="/js/main.js"></script>
+  <script src="/js/newsletter.js"></script>
 </body>
 </html>
