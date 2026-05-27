@@ -88,11 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Active Nav Link ---
-  const currentPage = window.location.pathname.split('/').pop() || '';
+  function normalizePath(p) {
+    return p.length > 1 ? p.replace(/\/+$/, '') : p;
+  }
+  const currentPath = normalizePath(window.location.pathname);
   document.querySelectorAll('.nav-link').forEach(link => {
-    const href = link.getAttribute('href');
-    const linkPage = href.split('/').pop() || '';
-    if (linkPage === currentPage || (currentPage === '' && (href === '/' || href === '/en/'))) {
+    if (normalizePath(new URL(link.href).pathname) === currentPath) {
       link.classList.add('active');
     }
   });
