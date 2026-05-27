@@ -13,3 +13,11 @@
 
 /images/*
   Cache-Control: public, max-age=31536000, immutable
+
+/index.html
+  X-Robots-Tag: noindex
+  Link: <https://omniwise.se/>; rel="canonical"
+
+/en/index.html
+  X-Robots-Tag: noindex
+  Link: <https://omniwise.se/en/>; rel="canonical"

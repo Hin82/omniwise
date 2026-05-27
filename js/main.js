@@ -88,10 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Active Nav Link ---
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPage = window.location.pathname.split('/').pop() || '';
   document.querySelectorAll('.nav-link').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html') || (currentPage === 'index.html' && href === 'index.html')) {
+    const linkPage = href.split('/').pop() || '';
+    if (linkPage === currentPage || (currentPage === '' && (href === '/' || href === '/en/'))) {
       link.classList.add('active');
     }
   });
