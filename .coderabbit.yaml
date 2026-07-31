@@ -35,6 +35,13 @@ reviews:
         Statisk webbplats. Kontrollera semantisk HTML, tillgänglighet (ARIA,
         alt-texter), giltig JSON-LD strukturerad data, samt att de svenska
         sidorna och de engelska sidorna (en/) hålls synkroniserade.
+    - path: "blogg/**/*.html"
+      instructions: >-
+        Blogginlägg. Granska mot BLOG_VOICE.md i rotkatalogen:
+        självironisk humor, "ni" avslappnat, ingen buzzword-bingo, TL;DR högst
+        upp, FAQ-sektion + matchande FAQPage-schema, Article-schema med Conny
+        Mohlin som author (@id: https://omniwise.se/#conny-mohlin) och
+        OmniWise AB som publisher. Flagga om tonen låter generisk AI-PR.
 
 chat:
   auto_reply: true
