@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="sv" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samsung Knox Manage 2026: nyheterna, nyttan och fallgroparna — OmniWise AB</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <meta name="description" content="Ny konsol, nya Knox Suite-planer och tätare Intune-integration. Här är vad som faktiskt hänt med Samsung Knox Manage 2025–2026, vad det ger er — och de fallgropar som kostar pengar." />
+  <meta name="keywords" content="Samsung Knox Manage, Knox Suite, MDM Jönköping, mobilhantering företag, Knox Manage Intune, EMM Sverige, enhetshantering Samsung, OmniWise" />
+  <meta name="author" content="Conny Mohlin" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://omniwise.se/blogg/samsung-knox-manage-2026" />
+  <link rel="alternate" hreflang="sv" href="https://omniwise.se/blogg/samsung-knox-manage-2026" />
+  <link rel="alternate" hreflang="x-default" href="https://omniwise.se/blogg/samsung-knox-manage-2026" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="OmniWise AB" />
+  <meta property="og:title" content="Samsung Knox Manage 2026: nyheterna, nyttan och fallgroparna" />
+  <meta property="og:description" content="Ny konsol, nya Knox Suite-planer och tätare Intune-integration. Vad som faktiskt hänt med Knox Manage — och vad ni bör se upp med." />
+  <meta property="og:url" content="https://omniwise.se/blogg/samsung-knox-manage-2026" />
+  <meta property="og:image" content="https://omniwise.se/images/og-image.png" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="article:published_time" content="2026-08-15" />
+  <meta property="article:modified_time" content="2026-08-15" />
+  <meta property="article:author" content="Conny Mohlin" />
+  <meta property="article:section" content="Mobilhantering" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Samsung Knox Manage 2026: nyheterna, nyttan och fallgroparna" />
+  <meta name="twitter:description" content="Ny konsol, nya Knox Suite-planer och tätare Intune-integration. Vad som faktiskt hänt — och vad ni bör se upp med." />
+  <meta name="twitter:image" content="https://omniwise.se/images/og-image.png" />
+
+  <!-- Structured Data: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Samsung Knox Manage 2026: nyheterna, nyttan och fallgroparna",
+    "description": "Ny konsol, nya Knox Suite-planer och tätare Intune-integration. Här är vad som faktiskt hänt med Samsung Knox Manage 2025–2026, vad det ger er — och de fallgropar som kostar pengar.",
+    "image": "https://omniwise.se/images/og-image.png",
+    "datePublished": "2026-08-15",
+    "dateModified": "2026-08-15",
+    "inLanguage": "sv",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://omniwise.se/blogg/samsung-knox-manage-2026"
+    },
+    "author": {
+      "@type": "Person",
+      "@id": "https://omniwise.se/#conny-mohlin",
+      "name": "Conny Mohlin",
+      "url": "https://omniwise.se/about",
+      "jobTitle": "Grundare, AI-utvecklare & Chefsstrateg",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "OmniWise AB",
+        "@id": "https://omniwise.se/#organization"
+      }
+    },
+    "publisher": {
+      "@type": "ProfessionalService",
+      "@id": "https://omniwise.se/#organization",
+      "name": "OmniWise AB",
+      "url": "https://omniwise.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://omniwise.se/images/8.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://omniwise.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://omniwise.se/blogg/" },
+      { "@type": "ListItem", "position": 3, "name": "Samsung Knox Manage 2026", "item": "https://omniwise.se/blogg/samsung-knox-manage-2026" }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Vad är Samsung Knox Manage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Knox Manage är Samsungs egen UEM-plattform (Unified Endpoint Management) för att hantera och säkra företagets enheter. Den ingår i Knox Suite Essentials och Enterprise, och hanterar utöver Samsung Galaxy även Android Enterprise, iOS, iPadOS, Windows och ChromeOS i den ursprungliga konsolen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Läggs Samsung Knox Manage ned?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej. Knox Manage utvecklas aktivt — release 26.06 kom i juni 2026 och Samsung rullar ut en helt ny administrationskonsol. Det som däremot fasas ut är gammal Android Legacy-registrering (Device Admin): sedan version 23.03 tas inga nya sådana registreringar emot, och i en release under 2027 slutar Knox Manage-agenten fungera på Legacy-registrerade enheter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vad kostar Samsung Knox Manage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Knox Suite finns i tre planer sedan januari 2025: Base är kostnadsfri med Galaxy-enheter, medan Essentials och Enterprise är betalda. Samsungs amerikanska listpriser är 30 USD respektive 52,50 USD per licens och år. Något publikt pris i kronor finns inte — i Sverige säljs Knox via återförsäljare och partners, så priset sätts i offert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ska vi välja Knox Manage eller Microsoft Intune?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oftast är det fel fråga. Knox Manage är en fullvärdig UEM och kan ersätta Intune, men de flesta företag som redan kör Microsoft 365 tjänar mest på att behålla Intune som UEM och lägga Knox Suite under. Då styr Intune enheterna medan Knox Service Plugin låser upp Samsung-specifika funktioner som Intune saknar egna inställningar för — brandvägg, DeX, knappmappning, kringutrustning och styrning av Galaxy AI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Var lagras data i Knox molntjänster, och funkar det med GDPR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Samsung driver två serverregioner för Knox molntjänster — en i USA och en i EU. Ett svenskt konto hamnar på EU-servern. Observera att EU-server inte är samma sak som att all data stannar inom EES: Samsungs personuppgiftsbiträdesavtal listar underbiträden i flera länder utanför EU. Det som gör bilden hanterbar är EU-kommissionens beslut om adekvat skyddsnivå för Sydkorea från december 2021, vilket innebär att överföringar dit inte kräver standardavtalsklausuler."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan Knox Manage styra Galaxy AI av GDPR-skäl?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, via Knox Service Plugin. Policyn \"Allow process data only on device\" tvingar Galaxy AI att bara behandla data lokalt på enheten i stället för i molnet, och det går även att blockera Galaxy AI helt eller funktion för funktion. Det kräver Galaxy S24 eller nyare, One UI 6.1 och Knox 3.10 eller senare."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Varför anlita OmniWise för Samsung Knox?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OmniWise är certifierad partner i Samsung Knox-ekosystemet och sitter i Jönköpingsregionen. Ni får en lokal partner som kan både Knox och Microsoft 365 — vilket är precis den kombinationen som avgör om en utrullning blir smidig eller dyr — utan storbolagens overhead. Vi matchar gärna en befintlig offert och visar var den innehåller licenser ni inte behöver."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" href="/css/tailwind.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body">
+
+  <!-- ======= Navigation ======= -->
+  <nav class="nav-main" role="navigation" aria-label="Huvudnavigering">
+    <div class="nav-inner max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+      <a href="/" aria-label="OmniWise AB — Hem">
+        <img src="/images/8.png" alt="OmniWise AB" class="h-16 md:h-20 w-auto object-contain" />
+      </a>
+      <div class="nav-links-desktop hidden md:flex items-center gap-8">
+        <a href="/services" class="nav-link">Tjänster</a>
+        <a href="/blogg/" class="nav-link active">Blogg</a>
+        <a href="/about" class="nav-link">Om oss</a>
+        <a href="/contact" class="nav-link">Kontakt</a>
+        <a href="/arende" class="nav-link">Ärenden</a>
+        <a href="/en/" class="lang-switch" aria-label="Switch to English"><span class="material-symbols-outlined text-base">language</span> EN</a>
+        <a href="/contact" class="btn-primary px-6 py-2.5 rounded-xl text-sm">Kom igång</a>
+      </div>
+      <button class="nav-mobile-toggle md:hidden text-primary" aria-label="Öppna meny">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Mobilnavigering">
+    <button class="close-btn" aria-label="Stäng meny">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="/">Hem</a>
+    <a href="/services">Tjänster</a>
+    <a href="/blogg/">Blogg</a>
+    <a href="/about">Om oss</a>
+    <a href="/contact">Kontakt</a>
+    <a href="/arende">Ärenden</a>
+    <a href="/en/">EN</a>
+  </div>
+
+  <main class="pt-36">
+
+    <article>
+      <!-- ====== Article Header ====== -->
+      <header class="bokeh-subtle pt-12 pb-12 px-4 md:px-8">
+        <div class="max-w-3xl mx-auto reveal">
+          <nav aria-label="Brödsmulor" class="flex items-center gap-2 text-sm text-on-surface-variant mb-8">
+            <a href="/" class="hover:text-primary">Hem</a>
+            <span aria-hidden="true">/</span>
+            <a href="/blogg/" class="hover:text-primary">Blogg</a>
+            <span aria-hidden="true">/</span>
+            <span class="text-primary font-semibold">Samsung Knox Manage 2026</span>
+          </nav>
+
+          <div class="flex flex-wrap items-center gap-3 mb-6 text-sm">
+            <span class="px-3 py-1 rounded-full bg-secondary-container/30 text-primary font-bold">Mobilhantering</span>
+            <span class="text-on-surface-variant">·</span>
+            <time datetime="2026-08-15" class="text-on-surface-variant">15 augusti 2026</time>
+            <span class="text-on-surface-variant">·</span>
+            <span class="text-on-surface-variant">11 min läsning</span>
+          </div>
+
+          <h1 class="font-headline text-4xl md:text-6xl font-extrabold text-primary tracking-tight leading-[1.1] mb-6">
+            Samsung Knox Manage 2026: nyheterna, nyttan — och fallgroparna
+          </h1>
+
+          <p class="text-xl text-on-surface-variant leading-relaxed">
+            Knox Manage har fått en <strong class="text-primary">helt ny administrationskonsol</strong>, Knox Suite har delats upp i tre planer och integrationen mot Microsoft Intune blev rejält mycket bättre under det senaste året. Här är vad som faktiskt hänt, vad det är värt för ett svenskt företag — och de tre fallgroparna som kostar pengar om ingen berättar om dem i förväg.
+          </p>
+        </div>
+      </header>
+
+      <!-- ====== Body ====== -->
+      <div class="px-4 md:px-8 pt-12 pb-24 md:pb-32">
+        <div class="max-w-3xl mx-auto prose-content">
+
+          <!-- TOC -->
+          <aside class="glass-card rounded-2xl p-6 mb-12" aria-labelledby="toc-heading">
+            <h2 id="toc-heading" class="font-headline font-bold text-primary text-lg mb-3">Innehåll</h2>
+            <ol class="space-y-1.5 text-on-surface-variant text-sm">
+              <li><a class="hover:text-secondary" href="#vad-ar-det">1. Vad Knox Manage faktiskt är</a></li>
+              <li><a class="hover:text-secondary" href="#nyheter">2. Nyheterna 2025–2026</a></li>
+              <li><a class="hover:text-secondary" href="#nya-konsolen">3. Nya konsolen — läs det här först</a></li>
+              <li><a class="hover:text-secondary" href="#intune">4. Knox Manage eller Intune? Fel fråga</a></li>
+              <li><a class="hover:text-secondary" href="#galaxy-ai">5. Galaxy AI-kontrollen ingen pratar om</a></li>
+              <li><a class="hover:text-secondary" href="#gdpr">6. GDPR, datalagring och NIS2</a></li>
+              <li><a class="hover:text-secondary" href="#kostnad">7. Vad kostar det?</a></li>
+              <li><a class="hover:text-secondary" href="#fallgropar">8. Tre fallgropar som kostar pengar</a></li>
+              <li><a class="hover:text-secondary" href="#scenarier">9. Typiska scenarier i praktiken</a></li>
+              <li><a class="hover:text-secondary" href="#omniwise">10. Varför anlita OmniWise</a></li>
+              <li><a class="hover:text-secondary" href="#faq">11. Vanliga frågor</a></li>
+            </ol>
+          </aside>
+
+          <!-- Tone-setter -->
+          <p class="text-on-surface-variant italic text-lg leading-relaxed mb-12">
+            En liten brasklapp först: mobilhantering är ett område där leverantörernas produktnamn byts ut ungefär lika ofta som de faktiska funktionerna. "Knox" är i dag ett paraply över ett dussin produkter, och halva jobbet i ett Knox-projekt är att lista ut vilka fyra av dem ni faktiskt behöver. Resten av den här artikeln handlar om just det.
+          </p>
+
+          <section aria-labelledby="vad-ar-det">
+            <h2 id="vad-ar-det" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">1. Vad Knox Manage faktiskt är</h2>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Knox Manage är Samsungs egen <strong class="text-primary">UEM-plattform</strong> — Unified Endpoint Management. Alltså samma produktkategori som Microsoft Intune, VMware/Omnissa Workspace ONE eller SOTI: ett verktyg där ni registrerar företagets enheter, styr inställningar, distribuerar appar, låser ned det som ska låsas och fjärrensar det som kommer bort.
+            </p>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Det som förvirrar de flesta är att Knox Manage inte säljs för sig, utan som en del av <strong class="text-primary">Knox Suite</strong>. Så här ser paketeringen ut sedan januari 2025:
+            </p>
+
+            <div class="overflow-x-auto my-6 rounded-2xl border border-outline-variant">
+              <table class="w-full text-sm">
+                <thead class="bg-surface-low text-primary">
+                  <tr>
+                    <th class="text-left p-4 font-headline">Ingår i Knox Suite</th>
+                    <th class="text-center p-4 font-headline">Base</th>
+                    <th class="text-center p-4 font-headline">Essentials</th>
+                    <th class="text-center p-4 font-headline">Enterprise</th>
+                  </tr>
+                </thead>
+                <tbody class="text-on-surface-variant">
+                  <tr class="border-t border-outline-variant">
+                    <td class="p-4 font-semibold text-primary">Knox Platform for Enterprise</td>
+                    <td class="p-4 text-center text-secondary">✓</td><td class="p-4 text-center text-secondary">✓</td><td class="p-4 text-center text-secondary">✓</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant bg-surface-low/40">
+                    <td class="p-4 font-semibold text-primary">Knox Mobile Enrollment</td>
+                    <td class="p-4 text-center text-secondary">✓</td><td class="p-4 text-center text-secondary">✓</td><td class="p-4 text-center text-secondary">✓</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant">
+                    <td class="p-4 font-semibold text-primary">Knox Manage</td>
+                    <td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-secondary">✓</td><td class="p-4 text-center text-secondary">✓</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant bg-surface-low/40">
+                    <td class="p-4 font-semibold text-primary">Knox Remote Support</td>
+                    <td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-secondary">✓</td><td class="p-4 text-center text-secondary">✓</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant">
+                    <td class="p-4 font-semibold text-primary">Knox E-FOTA (firmwarestyrning)</td>
+                    <td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-secondary">✓</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant bg-surface-low/40">
+                    <td class="p-4 font-semibold text-primary">Knox Asset Intelligence</td>
+                    <td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-secondary">✓</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant">
+                    <td class="p-4 font-semibold text-primary">Knox Capture (streckkodsskanning)</td>
+                    <td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-secondary">✓</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant bg-surface-low/40">
+                    <td class="p-4 font-semibold text-primary">Knox Authentication Manager</td>
+                    <td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-on-surface-variant/40">—</td><td class="p-4 text-center text-secondary">✓</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="glass-card rounded-2xl p-6 my-6">
+              <p class="text-on-surface leading-relaxed">
+                <strong class="text-primary">Vanligt missförstånd:</strong> Knox Configure ingår <em>inte</em> i Knox Suite. Det är en separat produkt för att massanpassa enheter innan utrullning — branding, förinstallerade appar, låsta inställningar direkt ur kartongen. Den dyker ofta upp i offerter som om den vore inkluderad.
+              </p>
+            </div>
+          </section>
+
+          <section aria-labelledby="nyheter">
+            <h2 id="nyheter" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">2. Nyheterna 2025–2026</h2>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Det har hänt mer på arton månader än på de tre åren dessförinnan. Kortversionen:
+            </p>
+
+            <div class="space-y-4 my-6">
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Januari 2025 — Ny licensmodell</p>
+                <p class="text-on-surface leading-relaxed">Knox Suite delades upp i <strong class="text-primary">Base, Essentials och Enterprise</strong>. Base är kostnadsfri med Galaxy-enheter och kräver ingen licensnyckel. Köper ni Galaxy Enterprise Edition ingår dessutom ett års Enterprise-plan.</p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Juni 2025 — Hårdvaruattestering i Intune som standard</p>
+                <p class="text-on-surface leading-relaxed">Samsung Knox On-Device Attestation ingår nu i <strong class="text-primary">standardinställningarna för alla nya Android-appskyddspolicyer i Intune</strong> på Galaxy-enheter med Android 15+. Enheten bevisar med hårdvarustöd att den inte är manipulerad — och det gäller även privatägda enheter.</p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">September 2025 — Knox Asset Intelligence till Microsoft Sentinel</p>
+                <p class="text-on-surface leading-relaxed">Blev allmänt tillgängligt. Ger säkerhetsteamet över 65 säkerhetshändelser från mobilflottan direkt in i SIEM:et. Kräver Galaxy på Android 15 eller senare.</p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Juni 2026 — Knox Manage 26.06 och ny konsol</p>
+                <p class="text-on-surface leading-relaxed">Den nya administrationskonsolen är nu <strong class="text-primary">standard för alla nya kunder</strong>. Det här är den enskilt viktigaste nyheten för er som står i begrepp att börja — se nästa avsnitt.</p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Juli 2026 — Intune styr Knox E-FOTA direkt</p>
+                <p class="text-on-surface leading-relaxed">Microsoft släppte en <strong class="text-primary">inbyggd Knox E-FOTA-koppling i Intune</strong>. Nu går det att styra exakt vilken firmwareversion varje enhet får, och schemalägga nedladdning och installation, från Intune-konsolen. Kräver licenser på båda sidor.</p>
+              </div>
+            </div>
+
+            <p class="text-on-surface-variant leading-relaxed">
+              På säkerhetssidan har Samsung dessutom rullat ut <strong class="text-primary">kvantsäker kryptering</strong> stegvis — först för molnbackup i februari 2025, sedan i Secure Wi-Fi, och med Galaxy S26 i februari 2026 även för systemprocesser och firmwareskydd. Det är inget ni behöver konfigurera, men det är ett rimligt argument för att hålla enhetsflottan modern.
+            </p>
+          </section>
+
+          <section aria-labelledby="nya-konsolen">
+            <h2 id="nya-konsolen" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">3. Nya konsolen — läs det här först</h2>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Knox Manage har just nu <strong class="text-primary">två parallella administrationsgränssnitt</strong>: den nya konsolen inuti Knox Admin Portal, och den ursprungliga fristående konsolen. Sedan release 26.06 hamnar nya kunder automatiskt i den nya. Det låter som en ren förbättring, men det finns tre saker att veta innan ni bestämmer er.
+            </p>
+
+            <ul class="space-y-3 text-on-surface-variant leading-relaxed my-6">
+              <li class="flex gap-3"><span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">warning</span><span><strong class="text-primary">Nya konsolen stödjer bara Android.</strong> Den ursprungliga hanterar Android, iOS, iPadOS, Windows och ChromeOS. Har ni en blandad flotta med iPhones eller Windows-datorer är den nya konsolen ännu inte ett alternativ.</span></li>
+              <li class="flex gap-3"><span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">warning</span><span><strong class="text-primary">Profiler och kiosker är inte kompatibla mellan konsolerna.</strong> En kiosk ni byggt i den gamla konsolen går varken att redigera eller distribuera från den nya. Byter ni får ni bygga om konfigurationen.</span></li>
+              <li class="flex gap-3"><span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">info</span><span><strong class="text-primary">Inget slutdatum är annonserat</strong> för den ursprungliga konsolen. Samsung säger att den nya "så småningom" ska nå funktionsparitet. Ni behöver alltså inte stressa — men ni bör välja medvetet.</span></li>
+            </ul>
+
+            <div class="glass-card rounded-2xl p-6 my-6">
+              <p class="text-on-surface leading-relaxed">
+                <strong class="text-primary">Vår rekommendation:</strong> ren Android-flotta som startar från noll — börja i nya konsolen. Blandad flotta, eller befintlig konfiguration med kiosker som fungerar — stanna i den ursprungliga tills pariteten är på plats. Det värsta valet är att börja i den ena och byta halvvägs.
+              </p>
+            </div>
+          </section>
+
+          <section aria-labelledby="intune">
+            <h2 id="intune" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">4. Knox Manage eller Intune? Fel fråga</h2>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Den vanligaste frågan vi får är "ska vi köra Knox eller Intune?". För de flesta företag som redan sitter i Microsoft 365 är svaret: <strong class="text-primary">båda, i olika roller.</strong>
+            </p>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Samsung marknadsför själva Knox Suite som något som kompletterar en befintlig UEM utan att störa den. Logiken är enkel: Intune är bäst på att vara företagets centrala UEM över alla plattformar, med villkorlig åtkomst mot Entra ID och koppling till resten av Microsoft-stacken. Knox är bäst på att nå ned i Samsungs hårdvara — dit ingen annan kommer.
+            </p>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Bryggan heter <strong class="text-primary">Knox Service Plugin</strong> och fungerar via Android Enterprise-standarden OEMConfig. Ni distribuerar den från Managed Google Play och konfigurerar den som en OEMConfig-profil i Intune. Microsoft skriver själva i sin dokumentation att OEMConfig typiskt konfigurerar inställningar som inte finns inbyggda i Intune. Konkret får ni tillgång till bland annat:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-6 text-sm">
+              <div class="glass-card rounded-2xl p-4"><strong class="text-primary">Brandvägg</strong> på enhetsnivå</div>
+              <div class="glass-card rounded-2xl p-4"><strong class="text-primary">Zero Trust Network Access</strong></div>
+              <div class="glass-card rounded-2xl p-4"><strong class="text-primary">Knappmappning</strong> — t.ex. skanningsknappen på XCover</div>
+              <div class="glass-card rounded-2xl p-4"><strong class="text-primary">DeX</strong>-styrning</div>
+              <div class="glass-card rounded-2xl p-4"><strong class="text-primary">Kringutrustning</strong> — USB, kamera, portar</div>
+              <div class="glass-card rounded-2xl p-4"><strong class="text-primary">Galaxy AI</strong>-databehandling</div>
+              <div class="glass-card rounded-2xl p-4"><strong class="text-primary">Certifikathantering</strong></div>
+              <div class="glass-card rounded-2xl p-4"><strong class="text-primary">Låsskärmsanpassning</strong></div>
+            </div>
+
+            <p class="text-on-surface-variant leading-relaxed">
+              Det bästa med den här modellen: Knox Service Plugin är kostnadsfri, och den KPE Premium-licens den behöver är också kostnadsfri. Ni kan alltså förstärka en befintlig Intune-miljö med Samsungs hårdvarufunktioner <strong class="text-primary">utan att köpa en enda betald Knox-licens</strong>. Först när ni vill ha E-FOTA eller Knox Asset Intelligence behövs Enterprise-planen.
+            </p>
+          </section>
+
+          <section aria-labelledby="galaxy-ai">
+            <h2 id="galaxy-ai" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">5. Galaxy AI-kontrollen ingen pratar om</h2>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Det här är enligt oss den mest underskattade funktionen i hela Knox-portföljen just nu, särskilt för svenska organisationer med personuppgifter att skydda.
+            </p>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Galaxy AI kan behandla data antingen lokalt på enheten eller i Samsungs moln. Via Knox Service Plugin kan IT-avdelningen styra exakt vilket som gäller, med policyn <strong class="text-primary">"Allow process data only on device"</strong>. Sätts den till sant lämnar AI-databehandlingen aldrig telefonen. Det går dessutom att blockera Galaxy AI helt, eller stänga av enskilda funktioner, och policyerna kan sättas separat för arbetsprofilen.
+            </p>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              För en vårdgivare, en kommun eller ett bolag som hanterar känsliga kunduppgifter är det skillnaden mellan "vi vet inte riktigt vad AI-funktionerna gör med våra data" och en dokumenterad, teknisk kontroll man kan visa upp i en konsekvensbedömning.
+            </p>
+            <p class="text-on-surface-variant leading-relaxed text-sm">
+              Kräver Galaxy S24 eller senare, One UI 6.1 (Android 14) eller senare och Knox 3.10+ — blockeringspolicyerna kräver Knox 3.11+.
+            </p>
+          </section>
+
+          <section aria-labelledby="gdpr">
+            <h2 id="gdpr" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">6. GDPR, datalagring och NIS2</h2>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Samsung driver två serverregioner för Knox molntjänster: en i USA och en i EU. Nord- och Sydamerika hamnar på den amerikanska, övriga världen på EU-servern. <strong class="text-primary">Ett svenskt konto provisioneras alltså mot EU-regionen.</strong> Sverige finns med bland de stödda platserna för både Knox Manage och Knox Asset Intelligence.
+            </p>
+
+            <div class="glass-card rounded-2xl p-6 my-6">
+              <p class="text-on-surface leading-relaxed mb-3">
+                <strong class="text-primary">Viktig nyans som ofta missas i upphandlingar:</strong> "EU-server" är inte samma sak som att all data stannar inom EES.
+              </p>
+              <p class="text-on-surface-variant leading-relaxed">
+                Samsungs personuppgiftsbiträdesavtal anger Samsung Electronics i Sydkorea som biträde och listar underbiträden i flera länder utanför EU. Avtalet garanterar alltså inte EU-exklusiv datalagring. Det som gör bilden hanterbar är att EU-kommissionen fattade beslut om <strong class="text-primary">adekvat skyddsnivå för Sydkorea i december 2021</strong> — överföringar dit kräver därför varken standardavtalsklausuler eller överföringsbedömning. Det är ett bättre utgångsläge än för många leverantörer utanför EU, men det ska stå rätt i er registerförteckning.
+              </p>
+            </div>
+
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Ett annat praktiskt förbehåll: ett Knox-konto kan inte spänna över båda regionerna. Har ni verksamhet i både Sverige och USA behöver ni två separata Knox-konton.
+            </p>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              När det gäller <strong class="text-primary">NIS2</strong> är mobilflottan i högsta grad i scope. I Sverige har direktivet genomförts genom <strong class="text-primary">cybersäkerhetslagen (2025:1506)</strong> och tillhörande förordning, båda i kraft sedan 15 januari 2026, och de omfattar verksamheter i 18 sektorer. Kraven på patchhantering, incidentupptäckt och åtkomstkontroll gäller lika mycket telefonerna som servrarna. Det är här E-FOTA (styrd firmware), Knox Asset Intelligence (händelser till SIEM) och hårdvaruattestering blir konkret nytta i stället för säljsnack. En sak att vara tydlig med: <em>det finns ingen "NIS2-certifierad" Knox-produkt.</em> Verktygen hjälper er uppfylla kraven, men efterlevnaden är er.
+            </p>
+            <p class="text-on-surface-variant leading-relaxed text-sm">
+              Samsung utlovar säkerhetsuppdateringar i upp till sju år, men takten är nivåindelad — månadsvis för aktuella flaggskepp och företagsenheter som XCover, kvartalsvis för mellanklass och äldre flaggskepp. Kontrollera cykeln för just era modeller innan ni bygger patchpolicyn på ett antagande.
+            </p>
+          </section>
+
+          <section aria-labelledby="kostnad">
+            <h2 id="kostnad" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">7. Vad kostar det?</h2>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Samsung publicerar listpriser i USA. Något publikt pris i kronor finns inte — i Sverige går Knox via återförsäljare och partners, och priset landar i offert. Men de amerikanska listpriserna ger en referensram:
+            </p>
+
+            <div class="overflow-x-auto my-6 rounded-2xl border border-outline-variant">
+              <table class="w-full text-sm">
+                <thead class="bg-surface-low text-primary">
+                  <tr>
+                    <th class="text-left p-4 font-headline">Plan</th>
+                    <th class="text-left p-4 font-headline">Listpris USA (per licens/år)</th>
+                    <th class="text-left p-4 font-headline">Lämpar sig för</th>
+                  </tr>
+                </thead>
+                <tbody class="text-on-surface-variant">
+                  <tr class="border-t border-outline-variant">
+                    <td class="p-4 font-semibold text-primary">Base</td>
+                    <td class="p-4">Kostnadsfri med Galaxy-enheter</td>
+                    <td class="p-4">Ni har redan en UEM och vill bara lägga Knox under</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant bg-surface-low/40">
+                    <td class="p-4 font-semibold text-primary">Essentials</td>
+                    <td class="p-4">30 USD</td>
+                    <td class="p-4">Knox Manage som er UEM + fjärrsupport</td>
+                  </tr>
+                  <tr class="border-t border-outline-variant">
+                    <td class="p-4 font-semibold text-primary">Enterprise</td>
+                    <td class="p-4">52,50 USD</td>
+                    <td class="p-4">Styrd firmware, flotthälsa, skanning, delade enheter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="text-on-surface-variant leading-relaxed">
+              Räknat per månad motsvarar det ungefär 2,50 respektive 4,40 USD — men <strong class="text-primary">använd inte de siffrorna som budget för Sverige</strong>. Valuta, återförsäljarmarginal, volym och avtalslängd påverkar. Poängen med tabellen är proportionerna: steget från Base till Essentials är litet, och steget till Enterprise motiveras nästan alltid av en enda funktion ni faktiskt behöver. Betala inte för de andra sju.
+            </p>
+          </section>
+
+          <section aria-labelledby="fallgropar">
+            <h2 id="fallgropar" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">8. Tre fallgropar som kostar pengar</h2>
+
+            <div class="space-y-6 my-6">
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Fallgrop 1 — Android Legacy fasas ut</p>
+                <p class="text-on-surface leading-relaxed">
+                  Gammal Device Admin-registrering har varit stängd för nyregistreringar sedan Knox Manage 23.03, utan nya funktioner, buggfixar eller support. <strong class="text-primary">I en release under 2027 slutar Knox Manage-agenten stödjas på Legacy-registrerade enheter helt.</strong> Migrering till Android Enterprise kräver att enheterna <em>registreras om</em> — det är alltså inte en knapptryckning utan ett projekt. Har ni enheter kvar på Legacy är det nu ni ska planera, inte nästa höst.
+                </p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Fallgrop 2 — KPE-licensen slutar gälla efter två år</p>
+                <p class="text-on-surface leading-relaxed">
+                  Knox Platform for Enterprise Premium är kostnadsfri och rymmer tio miljoner platser — men licensen <strong class="text-primary">upphör två år efter aktivering</strong>. På Android 11 och senare fortsätter arbetsprofilen fungera efter utgången, men Knox-funktionerna slutar gälla tills licensen aktiveras om. Det här är en klassisk "varför slutade brandväggspolicyn plötsligt fungera"-incident två år in i en annars välfungerande utrullning. Sätt en kalenderpåminnelse dag ett.
+                </p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Fallgrop 3 — OEMConfig-profiler som krockar</p>
+                <p class="text-on-surface leading-relaxed">
+                  Kör ni Knox Service Plugin under Intune gäller: <strong class="text-primary">bara en OEMConfig-profil per enhet.</strong> Tilldelas flera blir beteendet oförutsägbart, och om två profiler rör samma policygrupp hamnar båda i konfliktläge och <em>ingen</em> av dem distribueras. Maxstorleken är 500 kB. Det finns dessutom ett känt problem där vissa djupare inställningar inte slår igenom när Intunes Managed Home Screen körs med System UI påslaget. Bygg en profil, håll den samlad, och testa på en pilotgrupp innan bred utrullning.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="scenarier">
+            <h2 id="scenarier" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">9. Typiska scenarier i praktiken</h2>
+
+            <div class="space-y-6">
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Butik och handel</p>
+                <p class="text-on-surface leading-relaxed">Delade surfplattor i multi-app-kiosk med kassa- och lagerapp. <strong class="text-primary">Knox Authentication Manager</strong> löser skiftbytet: personalen loggar in med enbart PIN eller PIN och ansikte, och sessionsdata rensas automatiskt vid utloggning — vilket är en direkt GDPR-poäng på en enhet som går mellan tio personer. Knox Capture gör kameran till streckkodsläsare och kan ersätta separat skannerhårdvara.</p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Lager och logistik</p>
+                <p class="text-on-surface leading-relaxed">Tåliga Galaxy XCover i single-app-kiosk låst till lagersystemet, med den fysiska skanningsknappen mappad via Knox Service Plugin. Här är <strong class="text-primary">E-FOTA</strong> den funktion som betalar för sig själv: ni fryser OS-versionen så att en automatisk uppdatering inte knäcker WMS-klienten mitt i högsäsong.</p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Vård och omsorg</p>
+                <p class="text-on-surface leading-relaxed">Delade avdelningsenheter med automatisk sessionsrensning vid utloggning, tydlig separation via arbetsprofil, och Galaxy AI tvingad till behandling enbart på enheten. Kombinationen ger en dokumenterbar teknisk kontroll snarare än en policy i ett Worddokument.</p>
+              </div>
+
+              <div class="glass-card rounded-2xl p-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Fältservice</p>
+                <p class="text-on-surface leading-relaxed"><strong class="text-primary">Knox Asset Intelligence</strong> visar batterihälsa och laddcykler per enhet, vilket gör det möjligt att byta ut telefoner innan de börjar dö ute hos kund i stället för efter. Plus appkrascher, dataförbrukning och analys av Wi-Fi-avbrott per plats. Knox Remote Support löser felsökning utan utryckning.</p>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="omniwise">
+            <h2 id="omniwise" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">10. Varför anlita OmniWise</h2>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Vi är <strong class="text-primary">certifierade partners i Samsung Knox-ekosystemet</strong> och sitter i Habo, mitt i Jönköpingsregionen. Det betyder två saker som spelar roll för er.
+            </p>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Det första är att vi kan <strong class="text-primary">både Knox och Microsoft 365</strong>. Nästan alla Knox-projekt vi ser handlar egentligen om gränssnittet mellan de två — vem som äger enhetspolicyn, hur Intune och Knox Service Plugin ska samsas, vilka licenser ni faktiskt behöver och vilka som bara ligger i offerten. Det är där pengarna finns, och det är där en leverantör som bara kan den ena halvan gissar.
+            </p>
+            <p class="text-on-surface text-lg leading-relaxed mb-4">
+              Det andra är priset. Vi utmanar gärna IT-jättarna på både kostnad och upplägg: <strong class="text-primary">visa oss er befintliga offert</strong>, så går vi igenom den post för post. Vår erfarenhet är att en betydande del av en typisk Knox-offert är licenser som Base-planen redan täcker kostnadsfritt, eller Enterprise-funktioner som köps in för en verksamhet som inte använder dem. Ibland kommer vi fram till att er nuvarande leverantör har rätt — då säger vi det.
+            </p>
+
+            <div class="glass-card rounded-2xl p-6 my-6">
+              <p class="text-on-surface leading-relaxed mb-3"><strong class="text-primary">Så jobbar vi i ett Knox-uppdrag:</strong></p>
+              <ol class="space-y-2 text-on-surface-variant leading-relaxed text-sm">
+                <li><strong class="text-primary">1.</strong> Genomgång av flottan — modeller, OS-versioner, hur enheterna registrerats i dag och om något ligger kvar på Android Legacy.</li>
+                <li><strong class="text-primary">2.</strong> Licensanalys — minsta möjliga plan som faktiskt täcker era behov, med Base som utgångspunkt tills något motiverar mer.</li>
+                <li><strong class="text-primary">3.</strong> Arkitekturbeslut — Knox Manage som UEM, eller Knox under befintlig Intune. Konsolval utifrån om flottan är ren Android eller blandad.</li>
+                <li><strong class="text-primary">4.</strong> Pilot på en liten grupp innan bred utrullning — särskilt kiosk- och OEMConfig-konfiguration, som är det som brukar överraska.</li>
+                <li><strong class="text-primary">5.</strong> Överlämning med dokumentation, inklusive de datum ni måste bevaka: KPE-förnyelse och Legacy-migrering.</li>
+              </ol>
+            </div>
+          </section>
+
+          <section aria-labelledby="faq">
+            <h2 id="faq" class="font-headline text-3xl font-extrabold text-primary mt-12 mb-4">11. Vanliga frågor</h2>
+            <div class="flex flex-col gap-3 mt-6">
+              <details class="glass-card rounded-2xl p-6 group">
+                <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary">
+                  Vad är Samsung Knox Manage?
+                  <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+                </summary>
+                <p class="text-on-surface-variant leading-relaxed mt-4">Knox Manage är Samsungs egen UEM-plattform (Unified Endpoint Management) för att hantera och säkra företagets enheter. Den ingår i Knox Suite Essentials och Enterprise, och hanterar utöver Samsung Galaxy även Android Enterprise, iOS, iPadOS, Windows och ChromeOS i den ursprungliga konsolen.</p>
+              </details>
+              <details class="glass-card rounded-2xl p-6 group">
+                <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary">
+                  Läggs Samsung Knox Manage ned?
+                  <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+                </summary>
+                <p class="text-on-surface-variant leading-relaxed mt-4">Nej. Knox Manage utvecklas aktivt — release 26.06 kom i juni 2026 och Samsung rullar ut en helt ny administrationskonsol. Det som däremot fasas ut är gammal Android Legacy-registrering (Device Admin): sedan version 23.03 tas inga nya sådana registreringar emot, och i en release under 2027 slutar Knox Manage-agenten fungera på Legacy-registrerade enheter.</p>
+              </details>
+              <details class="glass-card rounded-2xl p-6 group">
+                <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary">
+                  Vad kostar Samsung Knox Manage?
+                  <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+                </summary>
+                <p class="text-on-surface-variant leading-relaxed mt-4">Knox Suite finns i tre planer sedan januari 2025: Base är kostnadsfri med Galaxy-enheter, medan Essentials och Enterprise är betalda. Samsungs amerikanska listpriser är 30 USD respektive 52,50 USD per licens och år. Något publikt pris i kronor finns inte — i Sverige säljs Knox via återförsäljare och partners, så priset sätts i offert.</p>
+              </details>
+              <details class="glass-card rounded-2xl p-6 group">
+                <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary">
+                  Ska vi välja Knox Manage eller Microsoft Intune?
+                  <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+                </summary>
+                <p class="text-on-surface-variant leading-relaxed mt-4">Oftast är det fel fråga. Knox Manage är en fullvärdig UEM och kan ersätta Intune, men de flesta företag som redan kör Microsoft 365 tjänar mest på att behålla Intune som UEM och lägga Knox Suite under. Då styr Intune enheterna medan Knox Service Plugin låser upp Samsung-specifika funktioner som Intune saknar egna inställningar för — brandvägg, DeX, knappmappning, kringutrustning och styrning av Galaxy AI.</p>
+              </details>
+              <details class="glass-card rounded-2xl p-6 group">
+                <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary">
+                  Var lagras data i Knox molntjänster, och funkar det med GDPR?
+                  <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+                </summary>
+                <p class="text-on-surface-variant leading-relaxed mt-4">Samsung driver två serverregioner för Knox molntjänster — en i USA och en i EU. Ett svenskt konto hamnar på EU-servern. Observera att EU-server inte är samma sak som att all data stannar inom EES: Samsungs personuppgiftsbiträdesavtal listar underbiträden i flera länder utanför EU. Det som gör bilden hanterbar är EU-kommissionens beslut om adekvat skyddsnivå för Sydkorea från december 2021, vilket innebär att överföringar dit inte kräver standardavtalsklausuler.</p>
+              </details>
+              <details class="glass-card rounded-2xl p-6 group">
+                <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary">
+                  Kan Knox Manage styra Galaxy AI av GDPR-skäl?
+                  <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+                </summary>
+                <p class="text-on-surface-variant leading-relaxed mt-4">Ja, via Knox Service Plugin. Policyn "Allow process data only on device" tvingar Galaxy AI att bara behandla data lokalt på enheten i stället för i molnet, och det går även att blockera Galaxy AI helt eller funktion för funktion. Det kräver Galaxy S24 eller nyare, One UI 6.1 och Knox 3.10 eller senare.</p>
+              </details>
+              <details class="glass-card rounded-2xl p-6 group">
+                <summary class="flex items-center justify-between gap-4 cursor-pointer font-headline font-bold text-primary">
+                  Varför anlita OmniWise för Samsung Knox?
+                  <span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-45 shrink-0">add</span>
+                </summary>
+                <p class="text-on-surface-variant leading-relaxed mt-4">OmniWise är certifierad partner i Samsung Knox-ekosystemet och sitter i Jönköpingsregionen. Ni får en lokal partner som kan både Knox och Microsoft 365 — vilket är precis den kombinationen som avgör om en utrullning blir smidig eller dyr — utan storbolagens overhead. Vi matchar gärna en befintlig offert och visar var den innehåller licenser ni inte behöver.</p>
+              </details>
+            </div>
+          </section>
+
+          <!-- CTA -->
+          <div class="bg-gradient-to-br from-primary to-primary-container p-8 md:p-10 rounded-3xl mt-16 text-white">
+            <h3 class="font-headline font-bold text-2xl mb-3">Utmana oss med er Knox-offert</h3>
+            <p class="text-white/80 mb-6 leading-relaxed">Skicka över offerten eller berätta hur er enhetsflotta ser ut i dag, så går vi igenom den post för post och säger rakt ut vad ni kan stryka. Kostnadsfritt, och utan att ni behöver byta leverantör för att få svaret.</p>
+            <a href="/contact" class="inline-flex items-center gap-2 bg-secondary-container text-primary font-headline font-bold px-6 py-3 rounded-xl hover:scale-105 transition-transform">
+              Boka ett kostnadsfritt möte
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- ====== Author Bio ====== -->
+          <aside class="mt-16 pt-12 border-t border-outline-variant" aria-labelledby="author-heading">
+            <h2 id="author-heading" class="sr-only">Författare</h2>
+            <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+              <img src="/images/conny-portrait.jpg" alt="Conny Mohlin, grundare av OmniWise AB" class="w-24 h-24 rounded-full object-cover border-2 border-secondary shrink-0" loading="lazy" />
+              <div>
+                <p class="text-on-surface-variant text-sm mb-1">Skrivet av</p>
+                <p class="font-headline font-bold text-primary text-lg">Conny Mohlin</p>
+                <p class="text-on-surface-variant text-sm mb-3">Grundare &amp; AI-utvecklare på OmniWise AB. 20+ års erfarenhet av IT-ledarskap, baserad i Habo, Jönköpings län.</p>
+                <a href="/about" class="text-secondary font-bold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">Läs mer om Conny <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- ====== Related Links ====== -->
+          <aside class="mt-12" aria-labelledby="related-heading">
+            <h2 id="related-heading" class="font-headline text-2xl font-extrabold text-primary mb-4">Läs vidare</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a href="/services" class="block glass-card rounded-2xl p-5 hover:shadow-lg transition-shadow">
+                <p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mb-1">Tjänster</p>
+                <p class="font-headline font-bold text-primary">MDM &amp; Samsung Knox</p>
+              </a>
+              <a href="/blogg/ai-agent-vs-chatbot" class="block glass-card rounded-2xl p-5 hover:shadow-lg transition-shadow">
+                <p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mb-1">Blogg</p>
+                <p class="font-headline font-bold text-primary">AI-agent vs chatbot: vad är skillnaden?</p>
+              </a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer-main py-20 px-4 md:px-8" role="contentinfo">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-12">
+        <div class="flex flex-col gap-5">
+          <img src="/images/8.png" alt="OmniWise AB logotyp" class="h-24 brightness-0 invert w-auto" loading="lazy" />
+          <p class="text-white/45 text-sm leading-relaxed">Lokal AI-utvecklare och IT-konsult i Jönköpingsregionen.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Tjänster</p>
+          <ul class="flex flex-col gap-3">
+            <li><a href="/services" class="text-sm">AI-utveckling</a></li>
+            <li><a href="/services" class="text-sm">Automation</a></li>
+            <li><a href="/services" class="text-sm">M365 &amp; moln</a></li>
+            <li><a href="/services" class="text-sm">Webbutveckling</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Företaget</p>
+          <ul class="flex flex-col gap-3">
+            <li><a href="/about" class="text-sm">Om oss</a></li>
+            <li><a href="/blogg/" class="text-sm">Blogg</a></li>
+            <li><a href="/contact" class="text-sm">Kontakt</a></li>
+            <li><a href="/integritetspolicy" class="text-sm">Integritetspolicy</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Kontor</p>
+          <p class="text-white/45 text-sm leading-relaxed">Hagagatan 16<br />566 32 Habo<br />Jönköpings län, Sverige</p>
+          <p class="text-white/45 text-sm mt-3">hello@omniwise.se</p>
+        </div>
+        <div>
+          <p class="footer-heading">Nyhetsbrev</p>
+          <p class="text-white/45 text-sm mb-4">Få de senaste insikterna om AI och automation.</p>
+          <form id="newsletter-footer" data-newsletter class="flex gap-2">
+            <label for="newsletter-footer-email" class="sr-only">E-postadress</label>
+            <input id="newsletter-footer-email" type="email" required autocomplete="email" placeholder="din@epost.se"
+              class="flex-1 px-4 py-3 rounded-xl bg-white/10 text-white text-sm border border-white/10 placeholder-white/30 focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container" />
+            <button type="submit" class="bg-secondary-container text-primary font-bold px-4 py-3 rounded-xl hover:scale-105 transition-transform" aria-label="Prenumerera">
+              <span class="material-symbols-outlined text-xl">send</span>
+            </button>
+          </form>
+          <p id="newsletter-footer-status" data-newsletter-status role="status" aria-live="polite" class="text-xs text-white/60 mt-2 min-h-[1rem]"></p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-white/30 text-sm">&copy; 2026 OmniWise AB. Alla rättigheter förbehållna.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.linkedin.com/company/omniwise-ab" target="_blank" rel="noopener" aria-label="OmniWise AB på LinkedIn" class="text-white/30 hover:text-secondary-container transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:hello@omniwise.se" aria-label="Maila OmniWise AB" class="text-white/30 hover:text-secondary-container transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 4.5h21A1.5 1.5 0 0124 6v12a1.5 1.5 0 01-1.5 1.5h-21A1.5 1.5 0 010 18V6a1.5 1.5 0 011.5-1.5zm10.5 8.69L2.4 6.6 1.5 7.8 12 15.6l10.5-7.8-.9-1.2L12 13.19z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/newsletter.js"></script>
+</body>
+</html>
