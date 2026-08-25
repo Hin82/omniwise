@@ -82,3 +82,27 @@ export async function onRequestOptions() {
   });
 }
 
+
+// Without these, a GET to /api/* has no handler and Pages falls through to the
+// static asset handler, serving index.html with a 200 — which let Google index
+// /api/contact as a duplicate of the homepage. POST and OPTIONS are untouched.
+function methodNotAllowed() {
+  return new Response(
+    JSON.stringify({ error: 'Method not allowed' }),
+    {
+      status: 405,
+      headers: {
+        'Content-Type': 'application/json',
+        Allow: 'POST, OPTIONS',
+        'X-Robots-Tag': 'noindex',
+        'Access-Control-Allow-Origin': '*',
+      },
+    }
+  );
+}
+
+export const onRequestGet = methodNotAllowed;
+export const onRequestHead = methodNotAllowed;
+export const onRequestPut = methodNotAllowed;
+export const onRequestPatch = methodNotAllowed;
+export const onRequestDelete = methodNotAllowed;
