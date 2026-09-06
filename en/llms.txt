@@ -5,24 +5,30 @@
 OmniWise AB was founded in 2024 by Conny Mohlin — an AI developer and IT strategist with 20+ years of technical leadership experience. The company is based at Hagagatan 16, 566 32 Habo, Sweden.
 
 ## Services
-- [AI Development & AI Agents](https://omniwise.se/en/services.html): Intelligent agents, chatbots, ChatGPT and Claude integrations, and custom AI workflows.
-- [AI Automation](https://omniwise.se/en/services.html): Process automation that eliminates manual work using Power Automate and custom APIs.
-- [Web Development](https://omniwise.se/en/services.html): Fast, secure, SEO-optimized websites in Swedish and English.
-- [Microsoft 365 & Cloud Strategy](https://omniwise.se/en/services.html): Tenant configuration, security hardening, and cloud migration.
-- [Samsung Knox Manage & MDM](https://omniwise.se/en/services.html): Enterprise device management and mobile fleet security.
-- [Fractional CIO](https://omniwise.se/en/services.html): IT leadership as a service for growing businesses.
-- [Training](https://omniwise.se/en/services.html): Microsoft 365 and Teams workshops.
+- [AI Development & AI Agents](https://omniwise.se/en/services): Intelligent agents, chatbots, ChatGPT and Claude integrations, and custom AI workflows.
+- [AI Automation](https://omniwise.se/en/services): Process automation that eliminates manual work using Power Automate and custom APIs.
+- [Web Development](https://omniwise.se/en/services): Fast, secure, SEO-optimized websites in Swedish and English.
+- [Microsoft 365 & Cloud Strategy](https://omniwise.se/en/services): Tenant configuration, security hardening, and cloud migration.
+- [Samsung Knox Manage & MDM](https://omniwise.se/en/services): Enterprise device management and mobile fleet security.
+- [Fractional CIO](https://omniwise.se/en/services): IT leadership as a service for growing businesses.
+- [Training](https://omniwise.se/en/services): Microsoft 365 and Teams workshops.
 
 ## Pages
 - [Home](https://omniwise.se/en/): Overview of OmniWise AB and its services.
-- [Services](https://omniwise.se/en/services.html): All services in detail, with frequently asked questions.
-- [About](https://omniwise.se/en/about.html): Conny Mohlin, founder and AI developer.
-- [Contact](https://omniwise.se/en/contact.html): Contact details and form.
+- [Services](https://omniwise.se/en/services): All services in detail, with frequently asked questions.
+- [About](https://omniwise.se/en/about): Conny Mohlin, founder and AI developer.
+- [Contact](https://omniwise.se/en/contact): Contact details and form.
 
 ## Contact
 - Email: hello@omniwise.se
+- Phone: +46 76 850 17 94
 - Location: Hagagatan 16, 566 32 Habo, Sweden
 - LinkedIn: https://www.linkedin.com/company/omniwise-ab
+
+## Blog
+- [Samsung Knox Manage 2026](https://omniwise.se/blogg/samsung-knox-manage-2026): New console, Knox Suite plans, Intune integration, GDPR and NIS2 (in Swedish).
+- [What does an AI developer cost in 2026?](https://omniwise.se/blogg/ai-utvecklare-kostnad-2026): Hourly and project pricing for AI development in Sweden (in Swedish).
+- [AI agent vs chatbot](https://omniwise.se/blogg/ai-agent-vs-chatbot): The difference between a bot that answers and an agent that acts (in Swedish).
 
 ## Other
 - Swedish version: https://omniwise.se/llms.txt
