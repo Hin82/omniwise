@@ -45,17 +45,12 @@
       "@type": "Organization",
       "name": "OmniWise AB",
       "url": "https://omniwise.se",
-      "@id": "https://omniwise.se/en/#organization"
+      "@id": "https://omniwise.se/#organization"
     },
     "url": "https://omniwise.se/en/about",
     "image": "https://omniwise.se/images/conny-portrait.jpg",
     "description": "AI developer and IT leader with 20+ years of experience in AI automation, Microsoft 365, cloud strategy, MDM, and digital transformation. Based in Habo, Sweden.",
     "knowsAbout": ["AI Development", "AI Agents", "AI Automation", "Microsoft 365", "Cloud Strategy", "Mobile Device Management", "Samsung Knox", "IT Strategy", "Web Development", "Digital Transformation"],
-    "telephone": "+46768501794",
-    "sameAs": [
-      "https://www.linkedin.com/company/omniwise-ab",
-      "https://www.google.com/search?kgmid=/g/11z2wtmvz0"
-    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Habo",
@@ -99,6 +94,30 @@
 
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="/css/style.css" />
+  <!-- Structured Data: Organization identity (sameAs / NAP) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@id": "https://omniwise.se/#organization",
+    "name": "OmniWise AB",
+    "url": "https://omniwise.se",
+    "email": "hello@omniwise.se",
+    "telephone": "+46768501794",
+    "sameAs": [
+      "https://www.linkedin.com/company/omniwise-ab",
+      "https://www.google.com/search?kgmid=/g/11z2wtmvz0"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hagagatan 16",
+      "addressLocality": "Habo",
+      "addressRegion": "J\u00f6nk\u00f6pings l\u00e4n",
+      "postalCode": "566 32",
+      "addressCountry": "SE"
+    }
+  }
+  </script>
 </head>
 
 <body class="bg-surface text-on-surface font-body overflow-x-hidden">
