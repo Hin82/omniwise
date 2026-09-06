@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-  <meta name="description" content="Insikter om AI-utveckling, AI-automatisering, Microsoft 365 och IT-strategi från OmniWise AB — AI-utvecklare i Jönköping och Habo." />
+  <meta name="description" content="Insikter om AI-utveckling, AI-automatisering, AI-agenter, Microsoft 365, MDM och IT-strategi från OmniWise AB — AI-utvecklare i Jönköping och Habo." />
   <meta name="keywords" content="AI-blogg, AI-utveckling Sverige, AI-automatisering, AI-agenter, Microsoft 365 tips, OmniWise blogg" />
   <meta name="author" content="OmniWise AB" />
   <meta name="robots" content="index, follow" />
@@ -64,13 +64,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&amp;icon_names=account_balance,add,analytics,arrow_forward,assignment,balance,block,bolt,business,call,chat,check_circle,chevron_right,close,cloud,cloud_sync,code,cookie,copyright,database,delete,description,desktop_windows,do_not_disturb,download,edit,edit_note,error,format_quote,gavel,groups,handyman,home_pin,hub,info,integration_instructions,inventory_2,key,language,laptop_mac,lightbulb,link,location_city,location_on,lock,mail,map,menu,person,phone_iphone,progress_activity,psychology,public,schedule,school,send,share,shield,shield_lock,shield_person,smart_toy,smartphone,supervised_user_circle,support_agent,sync_alt,terminal,thunderstorm,update,verified,verified_user,visibility,warning&amp;display=block" rel="stylesheet" />
 
   <!-- Compiled Tailwind CSS -->
   <link rel="stylesheet" href="/css/tailwind.css" />
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="/css/style.css" />
+  <!-- Structured Data: Organization identity (sameAs / NAP) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@id": "https://omniwise.se/#organization",
+    "name": "OmniWise AB",
+    "url": "https://omniwise.se",
+    "email": "hello@omniwise.se",
+    "telephone": "+46768501794",
+    "sameAs": ["https://www.linkedin.com/company/omniwise-ab"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hagagatan 16",
+      "addressLocality": "Habo",
+      "addressRegion": "J\u00f6nk\u00f6pings l\u00e4n",
+      "postalCode": "566 32",
+      "addressCountry": "SE"
+    }
+  }
+  </script>
 </head>
 
 <body class="bg-surface text-on-surface font-body">
@@ -79,7 +100,7 @@
   <nav class="nav-main" role="navigation" aria-label="Huvudnavigering">
     <div class="nav-inner max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
       <a href="/" aria-label="OmniWise AB — Hem">
-        <img src="/images/8.png" alt="OmniWise AB" class="h-16 md:h-20 w-auto object-contain" />
+        <img src="/images/8.webp" fetchpriority="high" decoding="async" width="500" height="250" alt="OmniWise AB" class="h-16 md:h-20 w-auto object-contain" />
       </a>
       <div class="nav-links-desktop hidden md:flex items-center gap-8">
         <a href="/services" class="nav-link">Tjänster</a>
@@ -268,7 +289,7 @@
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-12">
         <div class="flex flex-col gap-5">
-          <img src="/images/8.png" alt="OmniWise AB logotyp" class="h-24 brightness-0 invert w-auto" loading="lazy" />
+          <img src="/images/8.webp" width="500" height="250" alt="OmniWise AB logotyp" class="h-24 brightness-0 invert w-auto" loading="lazy" />
           <p class="text-white/45 text-sm leading-relaxed">Lokal AI-utvecklare och IT-konsult i Jönköpingsregionen. Vi skapar intelligenta miljöer med kundnära relationer.</p>
         </div>
         <div>
@@ -292,7 +313,7 @@
         <div>
           <p class="footer-heading">Kontor</p>
           <p class="text-white/45 text-sm leading-relaxed">Hagagatan 16<br />566 32 Habo<br />Jönköpings län, Sverige</p>
-          <p class="text-white/45 text-sm mt-3">hello@omniwise.se</p>
+          <p class="text-white/70 text-sm mt-3"><a href="tel:+46768501794" class="inline-block py-1">076-850 17 94</a><br><a href="mailto:hello@omniwise.se" class="inline-block py-1">hello@omniwise.se</a></p>
         </div>
         <div>
           <p class="footer-heading">Nyhetsbrev</p>
