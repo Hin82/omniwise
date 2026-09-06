@@ -1,4 +1,4 @@
-# Audit: omniwise.se · 4 sep 2026 · 16 sidor
+# Audit: omniwise.se · 4 sep 2026, fixpass 6 sep · 16 sidor
 
 ### [x] 1. Ikonteckensnittet var 4 MB · LCP 22,4 s på startsidan
 Klart 4 sep. Material Symbols laddades med fyra variabla axlar och utan
@@ -29,16 +29,11 @@ CDN (300 KB → 13 KB).
 Klart 4 sep. Rättade i llms.txt och en/llms.txt. La även till telefon
 och bloggsektion.
 
-### [ ] 8. Cloudflare blockerar alla AI-crawlers · 403 mot GPTBot, ClaudeBot, PerplexityBot
-
-Din robots.txt bjuder in dem. Cloudflare svarar 403 på user-agent-nivå
-medan Googlebot och bingbot får 200. Ingen AI-motor kan citera sajten.
-
-**Vem:** du, i Cloudflare
-**Tid:** 2 min
-**Klickväg:** dash.cloudflare.com → omniwise.se → Security → Bots →
-stäng av "Block AI Scrapers and Crawlers"
-**Ändringar:** inga i koden.
+### [x] 8. Cloudflare blockerade alla AI-crawlers · 403 mot GPTBot, ClaudeBot, PerplexityBot
+Klart 6 sep. "Block AI bots" stod på Block och gav 403 på user-agent-nivå
+medan Googlebot fick 200 — trots att robots.txt bjöd in dem. Satt till
+"Allow (do not block)". Alla tolv testade crawlers får nu 200 och samma
+bytes som en webbläsare.
 
 ### [ ] 9. Google-profilen: sociala profiler och serviceområden
 
@@ -120,22 +115,29 @@ och CSS-omskrivning av kortkomponenten, inte en mekanisk fix.
 
 ---
 
-## AI-ytor: baslinje 4 sep 2026
+## AI-ytor: baslinje 4 sep 2026, uppdaterad 6 sep
 
-Live-testet är **inte kört**. Anledningen är själva fyndet: alla AI-crawlers
-får 403 vid kanten, så ingen av motorerna kan hämta sajten.
+**Åtkomst, mätt 6 sep 2026 efter att Cloudflare-blockeringen togs bort:**
 
-| User-agent | Svar |
-|---|---|
-| GPTBot, OAI-SearchBot, ChatGPT-User | 403 |
-| ClaudeBot | 403 |
-| PerplexityBot | 403 |
-| Bytespider, Amazonbot | 403 |
-| Googlebot, bingbot, Applebot, Google-Extended | 200 |
+| User-agent | 4 sep | 6 sep |
+|---|---|---|
+| GPTBot, OAI-SearchBot, ChatGPT-User | 403 | **200** |
+| ClaudeBot, Claude-SearchBot | 403 | **200** |
+| PerplexityBot | 403 | **200** |
+| Bytespider, Amazonbot | 403 | **200** |
+| Googlebot, bingbot, Applebot, Google-Extended | 200 | 200 |
 
-Kör om testet när punkt 8 är gjord: fråga ChatGPT, Perplexity och Google
-AI Mode "vem är OmniWise AB", "bästa AI-utvecklare i Jönköping" och
-"Samsung Knox Manage konsult Sverige", och logga vilka som nämns.
+Verifierat att de får riktig HTML, inte en utmaningssida: GPTBot,
+PerplexityBot och ClaudeBot får identiska byte-antal som en webbläsare på
+/, /services, /blogg/samsung-knox-manage-2026 och /llms.txt, med schema,
+telefonnummer och sameAs intakt.
+
+**Citeringar är ännu inte mätta.** Åtkomst är inte samma sak som
+indexering — räkna med två till sex veckor. Kör testet i oktober: fråga
+ChatGPT, Perplexity och Google AI Mode "vem är OmniWise AB", "bästa
+AI-utvecklare i Jönköping" och "Samsung Knox Manage konsult Sverige", och
+logga vilka som nämns. Rör sig ingenting till dess är det inte crawlerna
+som är problemet — det är att sajten bara har fyra sökord (punkt 13).
 
 ## Vad auditen inte mätte · 4 sep 2026
 
@@ -145,7 +147,7 @@ AI Mode "vem är OmniWise AB", "bästa AI-utvecklare i Jönköping" och
 | Core Web Vitals fältdata | saknas | CWV-exporten (punkt 12) |
 | Manuell åtgärd | saknas | Skärmdump från GSC (punkt 12) |
 | Semrush Site Health | inferred | Ny crawl (punkt 11) |
-| Live AI-test | saknas | Punkt 8 först |
+| Live AI-test (citeringar) | saknas | Crawlers insläppta 6 sep; indexering tar 2-6 v. Mät i oktober |
 | Map pack-position | saknas | Ingen tracking-kampanj i Semrush |
 | Recensioner, du och konkurrenter | saknas | Du ser antalet i profilen |
 | GBP tjänster och produkter | saknas | Punkt 10 |
