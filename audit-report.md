@@ -32,10 +32,30 @@ och bloggsektion.
 ### [x] 8. Cloudflare blockerade alla AI-crawlers · 403 mot GPTBot, ClaudeBot, PerplexityBot
 Klart 6 sep. "Block AI bots" stod på Block och gav 403 på user-agent-nivå
 medan Googlebot fick 200 — trots att robots.txt bjöd in dem. Satt till
-"Allow (do not block)". Alla tolv testade crawlers får nu 200 och samma
-bytes som en webbläsare.
+"Allow (do not block)". Alla tolv testade crawlers får nu 200, och
+byte-jämförelsen mot en webbläsare stämmer för samtliga tolv — se
+AI-ytor nedan för metoden.
 
-### [ ] 9. Google-profilen: sociala profiler och serviceområden
+### [ ] 9. Cloudflare döljer e-postadressen för crawlers
+
+Email Address Obfuscation skriver om den synliga adressen till
+`[email protected]` och byter `mailto:`-länkarna mot
+`/cdn-cgi/l/email-protection#<hex>`. En AI-crawler som läser den
+renderade texten ser alltså inte `hello@omniwise.se`.
+
+Begränsad skada: JSON-LD-propertyn `email` och `llms.txt` är orörda, så
+adressen finns maskinläsbar på två ställen. Telefonnumret påverkas inte
+alls. Men den synliga adressen på sajten är det inte.
+
+**Vem:** du, i Cloudflare
+**Tid:** 1 min
+**Klickväg:** Scrape Shield → Email Address Obfuscation → Off
+**Avvägning:** obfuskeringen finns för att bromsa skördare av
+e-postadresser. Stänger du av den blir adressen läsbar för både AI och
+spambottar. Ditt val — men den ligger redan i klartext i `llms.txt` och i
+schemat, så skyddet är i praktiken redan genomhålat.
+
+### [ ] 10. Google-profilen: sociala profiler och serviceområden
 
 Sociala profiler är tomt trots att LinkedIn finns. Serviceområden är
 4 av 20 möjliga (Habo, Bankeryd, Mullsjö, Jönköping).
@@ -44,7 +64,7 @@ Sociala profiler är tomt trots att LinkedIn finns. Serviceområden är
 **Tid:** 10 min
 **Ändringar:** inga på sajten.
 
-### [ ] 10. Klistra in Tjänster och Produkter från Google-profilen
+### [ ] 11. Klistra in Tjänster och Produkter från Google-profilen
 
 Utan dem går två av fyra lokala mått inte att mäta: Tjänster (mål 50)
 och Produkter (mål 20). Redigera profil → Redigera tjänster → markera
@@ -54,7 +74,7 @@ allt → klistra in. Samma för produkter.
 **Tid:** 2 min
 **Ändringar:** inga.
 
-### [ ] 11. Starta en ny Semrush-crawl
+### [ ] 12. Starta en ny Semrush-crawl
 
 Senaste snapshot är 15 maj 2026 och ligger före tre fixar. Site Health
 går inte att rapportera förrän den körts om.
@@ -63,7 +83,7 @@ går inte att rapportera förrän den körts om.
 **Tid:** 2 min
 **Klickväg:** semrush.com/projects → omniwise.se → Site Audit → Rerun
 
-### [ ] 12. Exportera de fyra Search Console-rapporterna
+### [ ] 13. Exportera de fyra Search Console-rapporterna
 
 Du gav Coverage-exporten. Performance, Core Web Vitals och Manuella
 åtgärder saknas. Utan dem är positioner och fältdata gissningar.
@@ -72,7 +92,7 @@ Du gav Coverage-exporten. Performance, Core Web Vitals och Manuella
 **Tid:** 2 min
 **Ändringar:** inga.
 
-### [ ] 13. Egna sidor för de tjänster du säljer · den verkliga flaskhalsen
+### [ ] 14. Egna sidor för de tjänster du säljer · den verkliga flaskhalsen
 
 Du rankar på 4 sökord, två av dem är slumpträffar. Sju tjänster delar
 en enda /services-sida. Med 35 länkande domäner är taket ungefär KD 25,
@@ -90,7 +110,7 @@ och allt nedan ligger under det.
 **Vem:** du och jag, via /service-page (innehållsarbete, inte en fix)
 **Tid:** en sida i taget
 
-### [ ] 14. Outreach-listan · domäner som länkar till båda konkurrenterna men inte till dig
+### [ ] 15. Outreach-listan · domäner som länkar till båda konkurrenterna men inte till dig
 
 hitta.se (AS 76) · eniro.se (60) · theorg.com (50) · ju.se (46) ·
 jobbland.se (45) · curlie.org (34) · statsskuld.se (32) ·
@@ -102,13 +122,13 @@ citation-täckningen.
 **Vem:** du
 **Tid:** ~3 h för de tio
 
-### [ ] 15. Footerns kontrast · ditt beslut
+### [ ] 16. Footerns kontrast · ditt beslut
 
 text-white/45 ger #737f90 på #001736 = 4,39:1, under WCAG AA 4,5:1.
 text-white/50 ger 5,20:1 och klarar det. Varumärkestoken — orörd tills
 du säger till.
 
-### [ ] 16. Rubriknivåer hoppar H1 → H4
+### [ ] 17. Rubriknivåer hoppar H1 → H4
 
 Hero-dashboardens kort använder h4 direkt efter h1. Kräver en markup-
 och CSS-omskrivning av kortkomponenten, inte en mekanisk fix.
@@ -133,30 +153,37 @@ samtliga testade adresser:
 
 | Adress | Content-Type | Vad som verifierades |
 |---|---|---|
-| `/` · `/services` · `/blogg/samsung-knox-manage-2026` | `text/html` | Identiska bytes som webbläsare (34 947 / 47 561 / 60 954 B). 4-5 JSON-LD-block per sida, med `telephone` och `sameAs` intakt. |
-| `/llms.txt` | `text/plain` | Identiska bytes som webbläsare (2 660 B, 36 rader). Ren text utan markup — telefonnumret finns som klartext, inte som schema. |
+| `/` | `text/html` | Alla **tolv** crawlers: 34 948 B, och sha256 identisk med en webbläsare efter normalisering (se nedan). |
+| `/services` · `/blogg/samsung-knox-manage-2026` | `text/html` | GPTBot, PerplexityBot och ClaudeBot: identiska bytes som webbläsare (47 561 / 60 954 B). 4-5 JSON-LD-block per sida med `telephone` och `sameAs` intakt. |
+| `/llms.txt` | `text/plain` | GPTBot, PerplexityBot och ClaudeBot: identiska bytes som webbläsare (2 660 B, 36 rader). Ren text utan markup — telefonnumret som klartext, inte som schema. |
+
+**Om normaliseringen.** Rå sha256 skiljer sig mellan varje hämtning av `/`,
+även mellan två webbläsarhämtningar efter varandra — Cloudflares
+Email Address Obfuscation roterar sitt chiffer per request. Efter att det
+chiffret normaliserats bort är alla tolv crawlers byte-identiska med
+webbläsaren. Skillnaden är alltså per request, inte bot mot webbläsare.
 
 **Citeringar är ännu inte mätta.** Åtkomst är inte samma sak som
 indexering — räkna med två till sex veckor. Kör testet i oktober: fråga
 ChatGPT, Perplexity och Google AI Mode "vem är OmniWise AB", "bästa
 AI-utvecklare i Jönköping" och "Samsung Knox Manage konsult Sverige", och
 logga vilka som nämns. Rör sig ingenting till dess är det inte crawlerna
-som är problemet — det är att sajten bara har fyra sökord (punkt 13).
+som är problemet — det är att sajten bara har fyra sökord (punkt 14).
 
 ## Vad auditen inte mätte · 4 sep 2026
 
 | Post | Typ | Vad som stänger det |
 |---|---|---|
-| GSC-frågor, positioner, CTR | saknas | Performance-exporten (punkt 12) |
-| Core Web Vitals fältdata | saknas | CWV-exporten (punkt 12) |
-| Manuell åtgärd | saknas | Skärmdump från GSC (punkt 12) |
-| Semrush Site Health | inferred | Ny crawl (punkt 11) |
+| GSC-frågor, positioner, CTR | saknas | Performance-exporten (punkt 13) |
+| Core Web Vitals fältdata | saknas | CWV-exporten (punkt 13) |
+| Manuell åtgärd | saknas | Skärmdump från GSC (punkt 13) |
+| Semrush Site Health | inferred | Ny crawl (punkt 12) |
 | Live AI-test (citeringar) | saknas | Crawlers insläppta 6 sep; indexering tar 2-6 v. Mät i oktober |
 | Map pack-position | saknas | Ingen tracking-kampanj i Semrush |
 | Recensioner, du och konkurrenter | saknas | Du ser antalet i profilen |
-| GBP tjänster och produkter | saknas | Punkt 10 |
+| GBP tjänster och produkter | saknas | Punkt 11 |
 | Citation-täckning | inferred | citations.md saknar svenska kataloger |
-| 59 av 80 on-page-checkar | ej maskinverifierbara | Röst, intent, längd mot topp-3 |
+| 54 av 80 on-page-checkar | ej maskinverifierbara | Röst, intent, längd mot topp-3 |
 
 **Rättelse mot första rapporten:** de 11 bilderna jag flaggade som
 saknad alt-text har `alt=""` med `aria-hidden="true"` och är dekorativa.
