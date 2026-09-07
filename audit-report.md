@@ -127,10 +127,14 @@ och CSS-omskrivning av kortkomponenten, inte en mekanisk fix.
 | Bytespider, Amazonbot | 403 | **200** |
 | Googlebot, bingbot, Applebot, Google-Extended | 200 | 200 |
 
-Verifierat att de får riktig HTML, inte en utmaningssida: GPTBot,
+Verifierat att de får riktigt innehåll och inte en utmaningssida. GPTBot,
 PerplexityBot och ClaudeBot får identiska byte-antal som en webbläsare på
-/, /services, /blogg/samsung-knox-manage-2026 och /llms.txt, med schema,
-telefonnummer och sameAs intakt.
+samtliga testade adresser:
+
+| Adress | Content-Type | Vad som verifierades |
+|---|---|---|
+| `/` · `/services` · `/blogg/samsung-knox-manage-2026` | `text/html` | Identiska bytes som webbläsare (34 947 / 47 561 / 60 954 B). 4-5 JSON-LD-block per sida, med `telephone` och `sameAs` intakt. |
+| `/llms.txt` | `text/plain` | Identiska bytes som webbläsare (2 660 B, 36 rader). Ren text utan markup — telefonnumret finns som klartext, inte som schema. |
 
 **Citeringar är ännu inte mätta.** Åtkomst är inte samma sak som
 indexering — räkna med två till sex veckor. Kör testet i oktober: fråga
