@@ -147,9 +147,9 @@ och CSS-omskrivning av kortkomponenten, inte en mekanisk fix.
 | Bytespider, Amazonbot | 403 | **200** |
 | Googlebot, bingbot, Applebot, Google-Extended | 200 | 200 |
 
-Verifierat att de får riktigt innehåll och inte en utmaningssida. GPTBot,
-PerplexityBot och ClaudeBot får identiska byte-antal som en webbläsare på
-samtliga testade adresser:
+Verifierat att de får riktigt innehåll och inte en utmaningssida.
+Omfattningen skiljer sig per adress — startsidan är mätt för alla tolv,
+de tre övriga adresserna för tre crawlers:
 
 | Adress | Content-Type | Vad som verifierades |
 |---|---|---|
