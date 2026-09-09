@@ -20,6 +20,7 @@ OmniWise AB was founded in 2024 by Conny Mohlin — an AI developer and IT strat
 - [Contact](https://omniwise.se/en/contact): Contact details and form.
 
 ## Contact
+- Book a free call (Teams, 30 min): https://outlook.office.com/book/OmniWiseIT1@omniwise.se/?ismsaljsauthenabled
 - Email: hello@omniwise.se
 - Phone: +46 76 850 17 94
 - Location: Hagagatan 16, 566 32 Habo, Sweden
