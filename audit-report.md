@@ -1,4 +1,4 @@
-# Audit: omniwise.se · 4 sep 2026, fixpass 6 sep · 16 sidor
+# Audit: omniwise.se · 4 sep 2026 · fixpass 6 sep · mätning 15 okt
 
 ### [x] 1. Ikonteckensnittet var 4 MB · LCP 22,4 s på startsidan
 Klart 4 sep. Material Symbols laddades med fyra variabla axlar och utan
@@ -55,13 +55,15 @@ e-postadresser. Stänger du av den blir adressen läsbar för både AI och
 spambottar. Ditt val — men den ligger redan i klartext i `llms.txt` och i
 schemat, så skyddet är i praktiken redan genomhålat.
 
-### [ ] 10. Google-profilen: sociala profiler och serviceområden
+### [ ] 10. Google-profilen: tomma fält och serviceområden
 
-Sociala profiler är tomt trots att LinkedIn finns. Serviceområden är
-4 av 20 möjliga (Habo, Bankeryd, Mullsjö, Jönköping).
+Tomma fält enligt ditt klistrade profilutdrag: **Sociala profiler**
+(trots att LinkedIn finns), **Öppningsdatum**, Från företaget,
+Tjänstealternativ och Målgrupp. Serviceområden är 4 av 20 möjliga
+(Habo, Bankeryd, Mullsjö, Jönköping).
 
 **Vem:** du, i Google Business Profile
-**Tid:** 10 min
+**Tid:** 15 min
 **Ändringar:** inga på sajten.
 
 ### [ ] 11. Klistra in Tjänster och Produkter från Google-profilen
@@ -74,7 +76,46 @@ allt → klistra in. Samma för produkter.
 **Tid:** 2 min
 **Ändringar:** inga.
 
-### [ ] 12. Starta en ny Semrush-crawl
+### [ ] 12. Kannibalisering på ditt enda sökord
+
+Semrush 15 okt: tre URL:er konkurrerar om "it företag jönköping" (70/mån).
+
+| URL | Position |
+|---|---|
+| `/contact` | **29** |
+| `/` | 48 |
+| `/services` | 68 |
+
+Kontaktsidan rankar bäst på din enda kommersiella term. Det är fel sida:
+den är kort och saknar tjänstebeskrivning (181 ord mätt 4 sep, före
+Bookings-CTA:n).
+
+Sedan 4 sep är tre sökord borta: "atomize" (pos 65) och "cloudwiser ab"
+(pos 43) var slumpträffar och ingen förlust, men **"it konsult jönköping"
+(pos 35) var kommersiellt och är borta.** Unika sökord: 4 → 1.
+
+**Vem:** du och jag · **Orsak:** ingen sida äger termen tydligt.
+Löses av punkt 16, inte av en teknisk fix. Mätt 15 okt.
+
+### [ ] 13. Perplexity anger fel grundningsår och uppger LinkedIn som källa
+
+Perplexity svarar att du startade OmniWise i **september 2025**. Sajten
+säger 2024, verifierat i `llms.txt`, `en/llms.txt` och `foundingDate` i
+schemat på både `index.html` och `en/index.html`.
+
+**Jag har inte öppnat LinkedIn-sidan.** Att modellen attribuerar årtalet
+till LinkedIn är inte bevis för att det står där — den kan lika gärna ha
+härlett det ur registreringsdatum, inläggshistorik eller rent hallucinerat.
+Grundorsaken avgör åtgärden, så den måste kontrolleras först.
+
+**Vem:** du
+**Tid:** 3 min
+**Gör:** (1) öppna LinkedIn-företagssidan och se vad som faktiskt står.
+Står 2025 där — rätta det. Står 2024 — då hallucinerar Perplexity, och
+åtgärden är i stället att stärka entitetssignalerna. (2) Fyll i
+Öppningsdatum i Google-profilen, som står som tomt i punkt 10.
+
+### [ ] 14. Starta en ny Semrush-crawl
 
 Senaste snapshot är 15 maj 2026 och ligger före tre fixar. Site Health
 går inte att rapportera förrän den körts om.
@@ -83,7 +124,7 @@ går inte att rapportera förrän den körts om.
 **Tid:** 2 min
 **Klickväg:** semrush.com/projects → omniwise.se → Site Audit → Rerun
 
-### [ ] 13. Exportera de fyra Search Console-rapporterna
+### [ ] 15. Exportera de fyra Search Console-rapporterna
 
 Du gav Coverage-exporten. Performance, Core Web Vitals och Manuella
 åtgärder saknas. Utan dem är positioner och fältdata gissningar.
@@ -92,11 +133,11 @@ Du gav Coverage-exporten. Performance, Core Web Vitals och Manuella
 **Tid:** 2 min
 **Ändringar:** inga.
 
-### [ ] 14. Egna sidor för de tjänster du säljer · den verkliga flaskhalsen
+### [ ] 16. Egna sidor för de tjänster du säljer · den verkliga flaskhalsen
 
-Du rankar på 4 sökord, två av dem är slumpträffar. Sju tjänster delar
-en enda /services-sida. Med 35 länkande domäner är taket ungefär KD 25,
-och allt nedan ligger under det.
+Du rankar på **ett** unikt sökord (15 okt; var 4 den 4 sep, varav två
+slumpträffar). Sju tjänster delar en enda /services-sida. Med 35 länkande
+domäner är taket ungefär KD 25, och allt nedan ligger under det.
 
 | Sökord | Volym | KD | CPC |
 |---|---|---|---|
@@ -110,7 +151,7 @@ och allt nedan ligger under det.
 **Vem:** du och jag, via /service-page (innehållsarbete, inte en fix)
 **Tid:** en sida i taget
 
-### [ ] 15. Outreach-listan · domäner som länkar till båda konkurrenterna men inte till dig
+### [ ] 17. Outreach-listan · domäner som länkar till båda konkurrenterna men inte till dig
 
 hitta.se (AS 76) · eniro.se (60) · theorg.com (50) · ju.se (46) ·
 jobbland.se (45) · curlie.org (34) · statsskuld.se (32) ·
@@ -122,20 +163,20 @@ citation-täckningen.
 **Vem:** du
 **Tid:** ~3 h för de tio
 
-### [ ] 16. Footerns kontrast · ditt beslut
+### [ ] 18. Footerns kontrast · ditt beslut
 
 text-white/45 ger #737f90 på #001736 = 4,39:1, under WCAG AA 4,5:1.
 text-white/50 ger 5,20:1 och klarar det. Varumärkestoken — orörd tills
 du säger till.
 
-### [ ] 17. Rubriknivåer hoppar H1 → H4
+### [ ] 19. Rubriknivåer hoppar H1 → H4
 
 Hero-dashboardens kort använder h4 direkt efter h1. Kräver en markup-
 och CSS-omskrivning av kortkomponenten, inte en mekanisk fix.
 
 ---
 
-## AI-ytor: baslinje 4 sep 2026, uppdaterad 6 sep
+## AI-ytor: baslinje 4 sep 2026, åtkomst 6 sep, citeringar 15 okt
 
 **Åtkomst, mätt 6 sep 2026 efter att Cloudflare-blockeringen togs bort:**
 
@@ -163,22 +204,51 @@ Email Address Obfuscation roterar sitt chiffer per request. Efter att det
 chiffret normaliserats bort är alla tolv crawlers byte-identiska med
 webbläsaren. Skillnaden är alltså per request, inte bot mot webbläsare.
 
-**Citeringar är ännu inte mätta.** Åtkomst är inte samma sak som
-indexering — räkna med två till sex veckor. Kör testet i oktober: fråga
-ChatGPT, Perplexity och Google AI Mode "vem är OmniWise AB", "bästa
-AI-utvecklare i Jönköping" och "Samsung Knox Manage konsult Sverige", och
-logga vilka som nämns. Rör sig ingenting till dess är det inte crawlerna
-som är problemet — det är att sajten bara har fyra sökord (punkt 14).
+### Citeringsmätning 1 · 15 okt 2026 (Perplexity)
 
-## Vad auditen inte mätte · 4 sep 2026
+Kört skarpt i webbläsare, inloggningsfritt. **1 av 3 frågor ger citering.**
+
+| Fråga | Citerad? | Vem som nämns |
+|---|---|---|
+| "vem är OmniWise AB" | **JA** | `omniwise.se/services` citerad 7 gånger som primärkälla. Tjänstebeskrivningen stämmer, Conny identifierad som VD — men grundningsåret blev fel, se punkt 13. |
+| "bästa AI-utvecklare i Jönköping" | nej | **Siax** och **The Balthazar Project** namnges i stället. OmniWise nämns inte alls. |
+| "Samsung Knox Manage konsult Sverige" | nej | Perplexity svarar ordagrant att "sökresultaten visar ingen specifik svensk konsult eller partner". 10 källor, samsung.com primär. |
+
+**Vad det betyder — och vad det inte bevisar.** Perplexity citerar sajten
+i dag, på varumärkesfrågan. Före 6 sep fick PerplexityBot 403 och kunde
+inte hämta sidorna alls. Men **det finns ingen citeringsmätning från före
+6 sep**, så att crawler-öppningen orsakade citeringen är inte mätt — bara
+åtkomsten är det. Det här är mätning nummer 1; förändring kräver minst
+två. På de två köpfrågorna syns OmniWise inte, vilket är förenligt med
+(men inte bevis för) kombinationen "ett unikt sökord" och "ingen
+tjänstesida per tjänst".
+
+**Knox-frågan är öppet mål.** Du har en 2 919 ord lång bloggpost om
+Samsung Knox Manage, och Perplexity hittar ingen svensk konsult i sina
+källor. Posten svarar på "vad är det och vad kostar det", inte på "vem anlitar
+jag". Det är skillnaden mellan en bloggpost och en tjänstesida.
+
+**ChatGPT: ej försökt.** Ingen inloggad session fanns, och jag har inte
+testat om utloggat läge räcker — chatgpt.com går att använda utloggat, så
+det kan mycket väl gå.
+**Google AI Mode: försökt, gick inte.** Utan inloggning är AI-läge-fliken
+disabled och sidan tom. Kör båda manuellt med samma tre frågor, eller
+logga in i webbläsaren om det krävs, så kör jag dem.
+
+**Nästa mätning: november.** En surface mätt, två kvar. Rör sig
+ingenting på köpfrågorna till dess är det inte crawlerna som är problemet
+— det är att sajten har ett unikt sökord (punkt 16).
+
+## Vad auditen inte mätte · 4 sep 2026, uppdaterad 15 okt
 
 | Post | Typ | Vad som stänger det |
 |---|---|---|
-| GSC-frågor, positioner, CTR | saknas | Performance-exporten (punkt 13) |
-| Core Web Vitals fältdata | saknas | CWV-exporten (punkt 13) |
-| Manuell åtgärd | saknas | Skärmdump från GSC (punkt 13) |
-| Semrush Site Health | inferred | Ny crawl (punkt 12) |
-| Live AI-test (citeringar) | saknas | Crawlers insläppta 6 sep; indexering tar 2-6 v. Mät i oktober |
+| GSC-frågor, positioner, CTR | saknas | Performance-exporten (punkt 15) |
+| Core Web Vitals fältdata | saknas | CWV-exporten (punkt 15) |
+| Manuell åtgärd | saknas | Skärmdump från GSC (punkt 15) |
+| Semrush Site Health | inferred | Ny crawl (punkt 14) |
+| Live AI-test: Google AI Mode | saknas | Blockerad utloggat, verifierat |
+| Live AI-test: ChatGPT | saknas | Ej försökt; utloggat läge otestat |
 | Map pack-position | saknas | Ingen tracking-kampanj i Semrush |
 | Recensioner, du och konkurrenter | saknas | Du ser antalet i profilen |
 | GBP tjänster och produkter | saknas | Punkt 11 |
